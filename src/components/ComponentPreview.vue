@@ -3,37 +3,23 @@
     <div class="nameContainer">
         <div class="nameTitle">{{ skinName }}</div>
     </div>
-    <titledContainer title="组件预览">
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
+    <titledContainer title="品牌色">
+      <SkinsColorButtonList/>
     </titledContainer>
-    <titledContainer title="组件预览">
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-    </titledContainer>
-    <titledContainer title="组件预览">
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
-      <div>preview</div>
+    <titledContainer title="功能色">
+      <SkinsColorButtonList/>
+      <SkinsColorButtonList/>
+      <SkinsColorButtonList/>
+      <SkinsColorButtonList/>
     </titledContainer>
   </div>
 </template>
 
 <script>
 import titledContainer from '../components/TitledContainer.vue'
+import SkinsColorButtonList from '../components/SkinsColorButtonList.vue'
 export default {
-  components: {titledContainer},
+  components: {titledContainer,SkinsColorButtonList},
   props: {
     skinName:String
   }
