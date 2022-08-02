@@ -8,24 +8,10 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
 export default {
     name:'settingsItem',
-    props: ['btnState'],
+    props: ['btnState','title','color'],
     computed: {
-      ...mapState('button',['btnDefaultBg','btnDefaultHoverBgcolor','btnDefaultPressBgcolor']),
-      color(){
-        switch (this.btnState) {
-          case '默认':
-            return this.btnDefaultBg;
-          case '滑过':
-            return this.btnDefaultHoverBgcolor;
-          case '按下':
-            return this.btnDefaultPressBgcolor
-          default:
-            return this.btnDefaultBg;
-        }
-      },
       styleObj(){
         return {
           backgroundColor:this.color,
@@ -36,11 +22,14 @@ export default {
     methods: {
       changeColor(e){
         if(e.target.value.trim()){
-          this.$store.commit('button/CHANGE_COLOR',e.target.value.trim())
+          this.$store.dispatch('button/changeColor',{
+            color:e.target.value.trim(),
+            btnState:this.btnState,
+            title:this.title,
+            })
         }
       },
       handleBlur(e){
-        // this.changeColor(e);
           e.target.blur()
       }
     },

@@ -1,6 +1,6 @@
 <template>
   <h-button class="skins-btn" :style="styleObj">
-    <p class="actions">默认</p>
+    <p class="actions">{{btnState}}</p>
     <p class="color">{{color}}</p>
   </h-button>
 </template>
@@ -8,10 +8,8 @@
 <script>
 export default {
     name:'SkinsColorButton',
+    props: ['btnState','color'],
     computed: {
-      color(){
-        return this.$store.state.button.btnDefaultBg;
-      },
       styleObj(){
         return {
           backgroundColor:this.color,
@@ -27,6 +25,7 @@ export default {
     width: 150px;
     height: 60px;
     background-color: #037DF3;
+    text-align: left;
   }
   .actions{
     height: 16px;
@@ -36,6 +35,7 @@ export default {
     letter-spacing: 0;
     line-height: 16px;
     font-weight: 500;
+
   }
   .color{
     height: 12px;
@@ -45,5 +45,6 @@ export default {
     letter-spacing: 0;
     line-height: 12px;
     font-weight: 400;
+    margin-top: 8px;
   }
 </style>

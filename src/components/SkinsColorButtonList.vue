@@ -1,15 +1,14 @@
 <template>
-  <div class="btn-list">
-    <SkinsColorButton/>
-    <SkinsColorButton/>
-    <SkinsColorButton/>
-  </div>
+  <ul class="btn-list">
+    <SkinsColorButton  v-for="state in btnStates" :btnState="state"/>
+  </ul>
 </template>
 
 <script>
 import SkinsColorButton from '../components/SkinsColorButton'
 export default {
     name:'SkinsColorButtonList',
+    props: ['btnStates'],
     components: {
         SkinsColorButton,
     }
