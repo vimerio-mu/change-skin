@@ -1,18 +1,24 @@
 <template>
-  <h-button class="skins-btn">
+  <h-button class="skins-btn" :style="styleObj">
     <p class="actions">默认</p>
-    <p class="color">#037DF3</p>
+    <p class="color">{{color}}</p>
   </h-button>
 </template>
 
 <script>
 export default {
     name:'SkinsColorButton',
-    data() {
-      return {
-        actionColor:['Default','Hover','Pressed']
-      }
-    },
+    computed: {
+      color(){
+        return this.$store.state.button.btnDefaultBg;
+      },
+      styleObj(){
+        return {
+          backgroundColor:this.color,
+          borderColor:this.color
+        }
+      },
+    }
 }
 </script>
 
@@ -21,12 +27,7 @@ export default {
     width: 150px;
     height: 60px;
     background-color: #037DF3;
-    /* position: relative; */
   }
-  /* p{
-    position: absolute;
-    margin: auto;
-  } */
   .actions{
     height: 16px;
     font-family: PingFangSC-Medium;

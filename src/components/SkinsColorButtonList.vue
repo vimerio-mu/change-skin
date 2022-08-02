@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import SkinsColorButton from '../components/SkinsColorButton.vue'
+import SkinsColorButton from '../components/SkinsColorButton'
 export default {
     name:'SkinsColorButtonList',
     components: {
