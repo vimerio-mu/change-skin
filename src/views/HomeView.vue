@@ -56,7 +56,8 @@ export default {
     },
     intoSkin (skinName) {
       this.$router.push(`skins/${skinName}`)
-      // 在这里直接修改store中的currentSkin的值？
+      // 在这里直接修改store中的currentSkin的值
+      this.$store.commit('changeCurrentSkin', skinName)
     }
   },
   created () {

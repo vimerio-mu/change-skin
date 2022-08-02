@@ -14,7 +14,7 @@
         <router-link to="/" style="color: white">设置</router-link>
       </h-menu-item>
       <h-menu-item name="1">
-        <router-link to="/" style="color: white">导出</router-link>
+        <router-link to="/download" style="color: white">导出</router-link>
       </h-menu-item>
       <h-menu-item name="1">
         <router-link to="/" style="color: white">说明</router-link>
@@ -33,7 +33,6 @@ export default {
 .topbar {
   background: #037df3 !important;
   display: flex !important;
-  width: 100vw !important;
 }
 .topbar-logo {
   margin-left: 20px;
