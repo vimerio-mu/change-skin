@@ -13,9 +13,6 @@ const button = {
 		btnDisableColor: '#b3b3b3',
 		btnDisableBg: '#ededed',
 		btnDisableBorder: '#d9d9d9',
-		btnGhostColor: '#333',
-		btnGhostBg: '#fff',
-		btnGhostBorder: '#d9d9d9',
 		btnBeforeBackground: '#fff',
 		btnCommonBgcolor: '#f2f2f2',
 		btnDefaultColor: '#333',
@@ -36,6 +33,9 @@ const button = {
 		btnSmallDefaultPressColor: '#FFF',
 		btnSmallDefaultPressBgcolor: '#0270da',
 		btnSmallDefaultPressBorderColor: '#0270da',
+		btnGhostColor: '#333',
+		btnGhostBg: '#fff',
+		btnGhostBorder: '#d9d9d9',
 		btnGhostHoverColor: '#3597f5',
 		btnGhostHoverBgcolor: '#fff',
 		btnGhostHoverBorderColor: '#3597f5',
@@ -98,63 +98,116 @@ const button = {
 		btnErrorPressBorderColor: '#d84453',
 	},
 	mutations: {
-		CHANGE_DEFAULT_COLOR(state,color){
-			state.btnDefaultBg = color;
-		},
-		CHANGE_DEFAULT_HOVER_COLOR(state,color){
-			state.btnDefaultHoverBgcolor = color;
-		},
-		CHANGE_DEFAULT_PRESSED_COLOR(state,color){
-			state.btnDefaultPressBgcolor = color;
-		},
-		CHANGE_INFO_COLOR(state,color){
-			state.btnInfoBg = color;
-		},
-		CHANGE_INFO_HOVER_COLOR(state,color){
-			state.btnInfoHoverBgcolor = color;
-		},
-		CHANGE_INFO_PRESSED_COLOR(state,color){
-			state.btnInfoPressBgcolor = color;
-		},
-		CHANGE_SUCCESS_COLOR(state,color){
-			state.btnSuccessBg = color;
-		},
-		CHANGE_SUCCESS_HOVER_COLOR(state,color){
-			state.btnSuccessHoverBgcolor = color;
-		},
-		CHANGE_SUCCESS_PRESSED_COLOR(state,color){
-			state.btnSuccessPressBgcolor = color;
-		},
-		CHANGE_WARNING_COLOR(state,color){
-			state.btnWarningBg = color;
-		},
-		CHANGE_WARNING_HOVER_COLOR(state,color){
-			state.btnWarningHoverBgcolor = color;
-		},
-		CHANGE_WARNING_PRESSED_COLOR(state,color){
-			state.btnWarningPressBgcolor = color;
-		},
-		CHANGE_ERROR_COLOR(state,color){
-			state.btnErrorBg = color;
-		},
-		CHANGE_ERROR_HOVER_COLOR(state,color){
-			state.btnErrorHoverBgcolor = color;
-		},
-		CHANGE_ERROR_PRESSED_COLOR(state,color){
-			state.btnErrorPressBgcolor = color;
-		},
+		// 公司主题色设置（primary、info、success、warning、error）
+		CHANGE_PRIMARY_BG_COLOR(state,color){state.btnPrimaryBg = color;},
+		CHANGE_PRIMARY_HOVER_BG_COLOR(state,color){state.btnPrimaryHoverBgcolor = color;},
+		CHANGE_PRIMARY_PRESSED_BG_COLOR(state,color){state.btnPrimaryPressBgcolor = color;},
+		CHANGE_INFO_BG_COLOR(state,color){state.btnInfoBg = color;},
+		CHANGE_INFO_HOVER_BG_COLOR(state,color){state.btnInfoHoverBgcolor = color;},
+		CHANGE_INFO_PRESSED_BG_COLOR(state,color){state.btnInfoPressBgcolor = color;},
+		CHANGE_SUCCESS_BG_COLOR(state,color){state.btnSuccessBg = color;},
+		CHANGE_SUCCESS_HOVER_BG_COLOR(state,color){state.btnSuccessHoverBgcolor = color;},
+		CHANGE_SUCCESS_PRESSED_BG_COLOR(state,color){state.btnSuccessPressBgcolor = color;},
+		CHANGE_WARNING_BG_COLOR(state,color){state.btnWarningBg = color;},
+		CHANGE_WARNING_HOVER_BG_COLOR(state,color){state.btnWarningHoverBgcolor = color;},
+		CHANGE_WARNING_PRESSED_BG_COLOR(state,color){state.btnWarningPressBgcolor = color;},
+		CHANGE_ERROR_BG_COLOR(state,color){state.btnErrorBg = color;},
+		CHANGE_ERROR_HOVER_BG_COLOR(state,color){state.btnErrorHoverBgcolor = color;},
+		CHANGE_ERROR_PRESSED_BG_COLOR(state,color){state.btnErrorPressBgcolor = color;},
+		// 按钮组件颜色设置
+		// 小按钮
+		CHANGE_SMALL_BG_COLOR(state,color){state.btnSmallDefaultBg=color},	// 默认背景
+		CHANGE_SMALL_HOVER_BG_COLOR(state,color){state.btnSmallDefaultHoverBgcolor=color},//滑过背景
+		CHANGE_SMALL_PRESS_BG_COLOR(state,color){state.btnSmallDefaultPressBgcolor=color},	// 按下背景
+		CHANGE_SMALL_COLOR(state,color){state.btnSmallDefaultColor=color},	// 默认文字
+		CHANGE_SMALL_HOVER_COLOR(state,color){state.btnSmallDefaultHoverColor=color},//滑过文字
+		CHANGE_SMALL_PRESSED_COLOR(state,color){state.btnSmallDefaultPressColor=color},//按下文字
+		CHANGE_SMALL_BORDER_COLOR(state,color){state.btnSmallDefaultBorder=color},	// 默认边框
+		CHANGE_SMALL_HOVER_BORDER_COLOR(state,color){state.btnSmallDefaultHoverBorderColor=color},//滑过边框
+		CHANGE_SMALL_PRESSED_BORDER_COLOR(state,color){state.btnSmallDefaultPressBorderColor=color},//按下边框
+		// 中按钮
+		CHANGE_DEFAULT_BG_COLOR(state,color){state.btnDefaultBg=color},	// 默认背景
+		CHANGE_DEFAULT_HOVER_BG_COLOR(state,color){state.btnDefaultHoverBgcolor=color},//滑过背景
+		CHANGE_DEFAULT_PRESS_BG_COLOR(state,color){state.btnDefaultPressBgcolor=color},	// 按下背景
+		CHANGE_DEFAULT_COLOR(state,color){state.btnDefaultColor=color},	// 默认文字
+		CHANGE_DEFAULT_HOVER_COLOR(state,color){state.btnDefaultHoverColor=color},//滑过文字
+		CHANGE_DEFAULT_PRESSED_COLOR(state,color){state.btnDefaultPressColor=color},//按下文字
+		CHANGE_DEFAULT_BORDER_COLOR(state,color){state.btnDefaultBorder=color},	// 默认边框
+		CHANGE_DEFAULT_HOVER_BORDER_COLOR(state,color){state.btnDefaultHoverBorderColor=color},//滑过边框
+		CHANGE_DEFAULT_PRESSED_BORDER_COLOR(state,color){state.btnDefaultPressBorderColor=color},//按下边框
+		// 大按钮
+		CHANGE_LARGE_BG_COLOR(state,color){state.btnDefaultBg=color},	// 默认背景
+		CHANGE_LARGE_HOVER_BG_COLOR(state,color){state.btnDefaultHoverBgcolor=color},//滑过背景
+		CHANGE_LARGE_PRESS_BG_COLOR(state,color){state.btnDefaultPressBgcolor=color},	// 按下背景
+		CHANGE_LARGE_COLOR(state,color){state.btnDefaultColor=color},	// 默认文字
+		CHANGE_LARGE_HOVER_COLOR(state,color){state.btnDefaultHoverColor=color},//滑过文字
+		CHANGE_LARGE_PRESSED_COLOR(state,color){state.btnDefaultPressColor=color},//按下文字
+		CHANGE_DEFAULT_BORDER_COLOR(state,color){state.btnDefaultBorder=color},	// 默认边框
+		CHANGE_DEFAULT_HOVER_BORDER_COLOR(state,color){state.btnDefaultHoverBorderColor=color},//滑过边框
+		CHANGE_DEFAULT_PRESSED_BORDER_COLOR(state,color){state.btnDefaultPressBorderColor=color},//按下边框
+		// 禁用按钮
+		CHANGE_DISABLE_BG_COLOR(state,color){state.btnDisableBg=color},// 禁用背景
+		CHANGE_DISABLE_COLOR(state,color){state.btnDisableColor=color},// 禁用文字
+		CHANGE_DISABLE_BORDER_COLOR(state,color){state.btnDisableBorder=color},	//禁用边框
 	},
 	actions: {
 		changeColor(context,value){
+			let title = '';
+			switch (value.btnTitle) {
+				case '品牌色': title = 'PRIMARY'; break;
+				case '信息色': title = 'INFO'; break;
+				case '成功色': title = 'SUCCESS'; break;
+				case '警告色': title = 'WARNING'; break;
+				case '错误色': title = 'ERROR'; break;
+				case '小按钮': title = 'SMALL'; break;
+				case '中按钮': title = 'DEFAULT'; break;
+				case '大按钮': title = 'LARGE'; break;
+				default:
+					break;
+			}		
 			switch (value.btnState) {
+				// 公司品牌主题色设置
 				case '默认':
-					context.commit(`CHANGE_${value.title.toUpperCase()}_COLOR`,value.color)
+				case '默认背景':
+					context.commit(`CHANGE_${title}_BG_COLOR`,value.color)
 					break;
 				case '滑过':
-					context.commit(`CHANGE_${value.title.toUpperCase()}_HOVER_COLOR`,value.color)
+				case '滑过背景':
+					context.commit(`CHANGE_${title}_HOVER_BG_COLOR`,value.color)
 					break;
 				case '按下':
-					context.commit(`CHANGE_${value.title.toUpperCase()}_PRESSED_COLOR`,value.color)
+				case '按下背景':
+					context.commit(`CHANGE_${title}_PRESSED_BG_COLOR`,value.color)
+					break;
+				// 按钮组件颜色设置
+				case '默认文字':
+					context.commit(`CHANGE_${title}_COLOR`,value.color)
+					break;
+				case '默认边框':
+					context.commit(`CHANGE_${title}_BORDER_COLOR`,value.color)
+					break;
+				case '滑过文字':
+					context.commit(`CHANGE_${title}_HOVER_COLOR`,value.color)
+					break;
+				case '滑过边框':
+					context.commit(`CHANGE_${title}_HOVER_BORDER_COLOR`,value.color)
+					break;
+				case '按下文字':
+					context.commit(`CHANGE_${title}_PRESSED_COLOR`,value.color)
+					break;
+				case '按下边框':
+					context.commit(`CHANGE_${title}_PRESSED_BORDER_COLOR`,value.color)
+					break;
+				case '禁用背景':
+					context.commit(`CHANGE_DISABLE_BG_COLOR`,value.color)
+					break;
+				case '禁用边框':
+					context.commit(`CHANGE_DISABLE_BORDER_COLOR`,value.color)
+					break;
+				case '禁用文字':
+					context.commit(`CHANGE_DISABLE_COLOR`,value.color)
+					break;
+				default:
 					break;
 			}
 		},
