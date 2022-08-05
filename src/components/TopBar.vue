@@ -1,5 +1,5 @@
 <template>
-  <h-menu mode="horizontal" active-name="1" class="topbar">
+  <h-menu mode="horizontal"  class="topbar" theme="primary">
     <div class="topbar-logo">
       <router-link to="/">
         <img src="../assets/logo.png" alt="">
@@ -7,18 +7,24 @@
       </router-link>
     </div>
     <div class="topbar-nav">
-      <h-menu-item name="1">
-        <router-link to="/" style="color: white">首页</router-link>
-      </h-menu-item>
-      <h-menu-item name="1">
-        <router-link to="/" style="color: white">设置</router-link>
-      </h-menu-item>
-      <h-menu-item name="1">
-        <router-link to="/download" style="color: white">导出</router-link>
-      </h-menu-item>
-      <h-menu-item name="1">
-        <router-link to="/" style="color: white">说明</router-link>
-      </h-menu-item>
+      <router-link to="/" style="color: white">
+        <h-menu-item name="1">
+          <h-icon name="home"></h-icon>
+          首页
+        </h-menu-item>
+      </router-link>
+      <router-link to="/download" style="color: white">
+        <h-menu-item name="2">
+          <h-icon name="t-b-download"></h-icon>
+          导出
+        </h-menu-item>
+      </router-link>
+      <router-link to="/info" style="color: white">
+        <h-menu-item name="3">
+          <h-icon name="ios-information-outl"></h-icon>
+          说明
+        </h-menu-item>
+      </router-link>
     </div>
   </h-menu>
 </template>
@@ -31,7 +37,6 @@ export default {
 
 <style>
 .topbar {
-  background: #037df3 !important;
   display: flex !important;
 }
 .topbar-logo {

@@ -14,6 +14,7 @@
 export default {
   props: {
     settingName: String,
+    changeMethod: String,
     defaultColor: String
   },
   data() {
@@ -29,7 +30,7 @@ export default {
     changeColor(e) {
       let color = e.target.value
       // 更改store中的值
-      this.$store.commit('changePrimaryColor', color)
+      this.$store.commit(this.$props.changeMethod, color)
       // 更改本组件色块的值
       this.$refs.colorPreview.style.backgroundColor = color
     }
@@ -48,6 +49,7 @@ export default {
   line-height: 14px;
   font-weight: 400;
   margin-left: 40px;
+  margin-bottom: 8px;
 }
 .colorPreview {
   height: 20px;
@@ -60,8 +62,8 @@ export default {
   border: 1px solid rgba(217,217,217,1);
   border-radius: 2px;
   padding: 8px;
-  margin-left: 8px;
+  margin-left: 32px;
   height: 28px;
-  width: 165px;
+  flex: 1;
 }
 </style>

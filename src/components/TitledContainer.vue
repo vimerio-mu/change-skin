@@ -52,6 +52,7 @@ export default {
   height: 16px;
   width: 100%;
   display: flex;
+  margin-bottom: 16px;
 }
 .coloredBlock {
   display: inline-block;

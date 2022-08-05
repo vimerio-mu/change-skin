@@ -4,8 +4,7 @@
     <div class="layout-content">
       <sidebar/>
       <div class="layout-content-main">
-          <componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px"/>
-          <componentSettings style="flex:1;margin:16px"/>
+          <router-view></router-view>
           <savebar />
       </div>
     </div>
@@ -16,10 +15,8 @@
 import topbar from '../components/TopBar.vue'
 import sidebar from '../components/SideBar.vue'
 import savebar from '../components/SaveBar.vue'
-import componentPreview from '../components/ComponentPreview.vue'
-import componentSettings from '../components/ComponentSettings.vue'
 export default {
-  components: {topbar, sidebar, componentPreview, componentSettings, savebar},
+  components: {topbar, sidebar, savebar},
   created() {
     console.log(this.$router.history.current.params.name)
   }
@@ -36,5 +33,6 @@ export default {
   margin: 8px;
   flex: 1;
   display: flex;
+  padding-bottom: 20px;
 }
 </style>
