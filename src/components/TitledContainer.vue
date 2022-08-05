@@ -72,8 +72,6 @@ export default {
   height: 1px;
   background: linear-gradient(to right, #D9D9D9 , #D9D9D9  4px, transparent 2px, transparent);
   background-size: 6px 100%;
-  margin-left: 2px;
-  margin-top: 8px;
-  margin-right: 8px;
+  margin: 7px 8px 0 8px;
 }
 </style>

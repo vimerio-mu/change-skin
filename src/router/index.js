@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import DownloadPage from '../views/DownloadPage.vue'
 Vue.use(VueRouter)
 
 const routes = [

@@ -52,6 +52,7 @@
 <script>
 import topbar from '../components/TopBar.vue'
 import sidebar from '../components/SideBar.vue'
+import savebar from '../components/SaveBar.vue'
 import componentPreview from '../components/ComponentPreview.vue'
 import componentSettings from '../components/ComponentSettings.vue'
 import titledContainer from '../components/TitledContainer.vue'
@@ -145,7 +146,7 @@ export default {
 }
 .layout-content-main {
   background: #ffffff;
-  margin-left: 8px;
+  margin: 8px;
   flex: 1;
   display: flex;
 }
