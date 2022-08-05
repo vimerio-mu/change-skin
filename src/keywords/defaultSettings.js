@@ -1,4 +1,5 @@
 const defaultSeetings = {
+  // A开头的
   colorDefaultOne: '#F7F7F7',
   colorDefaultTwo: '#F2F2F2',
   colorDefaultThree: '#EDEDED',
@@ -103,6 +104,7 @@ const defaultSeetings = {
   shadowDeep: '0 4px 12px 0 rgba(0,0,0,0.15)',
   shadowRow: '0 2px 15px 0 rgba(225,225,225,0.50)',
   shadowRightBottomFixed: '0 1px 10px 4px #c1d7ec',
+  // 具体组件
   alertDescColor: '#333',
   alertMessageColor: '#333',
   alertSuccessBorderColor: '#B7EB8F',
@@ -118,12 +120,15 @@ const defaultSeetings = {
   alertErrorBgcolor: '#FDEDEE',
   alertErrorIconColor: '#f14c5d',
   alertCloseIconfontColor: '#979797',
+
   backtopInnerBackgroundColor: 'rgba(0, 0, 0, 0.5)',
   backtopInnerBoxShadow: '0 2px 8px 0 rgba(0,0,0,0.30)',
   backtopInnerColor: '#fff',
   backtopInnerHoverBackgroundColor: '#3597f5',
+
   badgeCountBackground: '#f14c5d',
   badgeCountBoxShadow: '0 0 0 1px #fff',
+
   btnGroupBorder: '#298DFF',
   btnBaseColor: '#fff',
   btnDisableColor: '#b3b3b3',
@@ -212,6 +217,7 @@ const defaultSeetings = {
   btnErrorPressColor: '#fff',
   btnErrorPressBgcolor: '#d84453',
   btnErrorPressBorderColor: '#d84453',
+
   calendarMonthContentColor: '#999999',
   calendarMonthContentBorderColor: 'transform',
   calendarMonthContentItemColor: '#333333',
@@ -225,6 +231,7 @@ const defaultSeetings = {
   calendarHandleItemHoverBackground: '#111',
   calendarHandleItemHoverColor: '#fff',
   calendarMonthContentItemBg: 'none',
+
   datePickerBoderColor: '#f7f7f7',
   datePickerCellHoverBg: '#f3f9ff',
   datePickerPanelShortcutHoverBg: '#F3F9FF',
@@ -234,14 +241,19 @@ const defaultSeetings = {
   datePickerConfirmTimeDisabledColor: '#037df3',
   datePickerConfirmArrowBtnColor: '#666',
   datePickerConfirmArrowBtnHoverColor: '#3597f5',
+
   drawerContentBackgroundColor: '#fff',
+
   editgridTitleExpandColor: '#495060',
   editgridBackgroundColor: '#fff',
   editgridBorderRight: '1px solid $border-color-base',
   editgridThTdBorderBottom: '1px solid $border-color-base',
+
   formLabelColor: '#333',
   formItemLabelBackground: 'transparent',
+
   hDatatreeSearchVisableBorderColor: '#037df3',
+
   inputColor: '#333',
   inputBg: '#fff',
   inputPlaceholderColor: '#999',
@@ -252,16 +264,21 @@ const defaultSeetings = {
   inputDisabledBg: '#EDEDED',
   inputReadonlyBg: '#EDEDED',
   inputHint: '#909399',
+
   inputnumberInputColor: '#333',
   inputnumberMixinDisabledColor: '#666',
   inputnumberHandlerWrapBackground: '#fff',
   inputnumberAppendBackground: '#eee',
   inputnumberHandlerColor: '#999',
   inputnumberHandlerDownInnerColor: '#999',
+
   legendColor: '#333',
+
   loadingBarNormalColor: '#037df3',
+  
   messageNoticeContentBoxShadow: '0 2px 8px 0 rgba(0,0,0,0.30)',
   messageNoticeContentBackground: '#fff',
+
   mixinContentHeaderColor: '#333',
   mixinCheckboxDisabledCheckColor: '#999999',
   mixinInputDisabledColor: '#5D6673',
@@ -272,10 +289,12 @@ const defaultSeetings = {
   mixinInputBorderReadonlyColor: '#5dacf7',
   mixinInputActiveBoxShadow: '0 0 0 2px rgba(2,112,218, 0.2)',
   mixinInputActiveErrorBoxShadow: '0 0 0 2px rgba(241,76,93, 0.2)',
+
   msgboxHeaderBg: 'transparent',
   msgboxBodyColor: '#333',
   msgboxTitleColor: '#333',
   msgboxContentBackgroundColor: '#fff',
+
   navbarBgcolor: '#F7F7F7',
   navbarColor: '#171B26',
   navbarHoverColor: '#037df3',
@@ -286,6 +305,7 @@ const defaultSeetings = {
   navbarTagCloseTipBgcolor: '#fff',
   navbarTagCloseTipItemHoverBgcolor: '#4A94FA',
   navbarTagCloseTipItemHoverColor: '#fff',
+
   noticeNoticeBackground: '#fff',
   noticeDescColor: '#666',
   noticeNoticeCloseColor: '#666',
@@ -294,6 +314,7 @@ const defaultSeetings = {
   noticeWithSuccessColor: 'transparent',
   noticeWithWarningColor: 'transparent',
   noticeWithErrorColor: 'transparent',
+  
   pageJumpNextColor: '#DCE1E7',
   pageNextAColor: '#ccc',
   pageDisabledColor: '#B3B3B3',

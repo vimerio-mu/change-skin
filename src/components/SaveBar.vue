@@ -1,6 +1,6 @@
 <template>
   <div class="saveBar">
-    <h-button type="primary" class="saveBtn" @click="saveSkin">保存</h-button>
+      <h-button type="primary" class="saveBtn" @click="saveSkin">保存</h-button>
   </div> 
 </template>
 
@@ -20,6 +20,8 @@ export default {
           allSettings += JSON.stringify(this.$store.state[component])
         }
         // 还需要一些调整，和现在的数据结构一致
+        allSettings = allSettings.replaceAll('{', '')
+        allSettings = allSettings.replaceAll('}', '')
         console.log(allSettings)
         // 发送更新请求
         // this.skin = fetch('http://localhost:7001/skins/' + this.$store.currentSkin, {

@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  components: {titledContainer},
   props: {
     skinName:String
   }

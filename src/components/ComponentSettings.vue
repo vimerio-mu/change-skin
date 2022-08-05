@@ -5,20 +5,20 @@
 </template>
 
 <script>
-// import titledContainer from '../components/TitledContainer.vue'
-// import SettingsList from '../components/SettingsList.vue'
-// import SettingsContainer from '../components/SettingsContainer.vue'
+import titledContainer from '../components/TitledContainer.vue'
+import settingLine from '../components/SettingLine.vue'
 export default {
-  components: {
-    // titledContainer,
-    // SettingsList,
-    // SettingsContainer,
+  components: {titledContainer, settingLine},
+  data() {
+    return {
+      btnDangerColor: '#F14C5D'
+    }
   },
-  // data () {
-  //     return {
-  //         colorTitles:['信息色','成功色','警告色','错误色'],
-  //     }
-  // }
+  methods: {
+    update(data) {
+      this.btnDangerColor = data
+    }
+  }
 }
 </script>
 
