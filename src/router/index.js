@@ -8,6 +8,8 @@ import BadgePage from '../views/components/BadgePage.vue'
 import BacktopPage from '../views/components/BacktopPage.vue'
 import CalendarPage from '../views/components/CalendarPage.vue'
 import DatePickerPage from '../views/components/DatePickerPage.vue'
+import EditgridPage from '../views/components/EditgridPage.vue'
+import InputPage from '../views/components/InputPage.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -40,6 +42,14 @@ const routes = [
       {
         path: 'datepicker',
         component: DatePickerPage,
+      },
+      {
+        path: 'editgrid',
+        component: EditgridPage,
+      },
+      {
+        path: 'input',
+        component: InputPage,
       },
     ],
   },

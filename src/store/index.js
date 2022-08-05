@@ -10,6 +10,8 @@ import moduleBadge from './modules/badge'
 import moduleBacktop from './modules/backtop'
 import moduleCalendar from './modules/calendar'
 import moduledatePicker from './modules/datepicker'
+import editgridKeywords from './modules/editgrid'
+import inputKeywords from './modules/input'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -32,6 +34,8 @@ const store = new Vuex.Store({
     backtop: moduleBacktop,
     calendar: moduleCalendar,
     datepicker: moduledatePicker,
+    editgrid: editgridKeywords,
+    input: inputKeywords,
   }
 })
 
