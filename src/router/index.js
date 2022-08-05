@@ -10,6 +10,7 @@ import CalendarPage from '../views/components/CalendarPage.vue'
 import DatePickerPage from '../views/components/DatePickerPage.vue'
 import EditgridPage from '../views/components/EditgridPage.vue'
 import InputPage from '../views/components/InputPage.vue'
+import InputNumberPage from '../views/components/InputNumberPage.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -50,6 +51,10 @@ const routes = [
       {
         path: 'input',
         component: InputPage,
+      },
+      {
+        path: 'inputnumber',
+        component: InputNumberPage,
       },
     ],
   },

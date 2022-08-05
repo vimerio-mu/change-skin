@@ -44,19 +44,22 @@
           From类型
         </template>
         <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/datepicker`}">
-          <h-menu-item name="4-4">日期选择器</h-menu-item>
+          <h-menu-item name="5-1">日期选择器</h-menu-item>
         </router-link>
         <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/input`}">
-          <h-menu-item name="4-4">输入框</h-menu-item>
+          <h-menu-item name="5-2">输入框</h-menu-item>
+        </router-link>
+        <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/inputnumber`}">
+          <h-menu-item name="5-3">数字输入框</h-menu-item>
         </router-link>
       </h-submenu>
-      <h-submenu name="5">
+      <h-submenu name="6">
         <template slot="title">
           <h-icon name="mail"></h-icon>
           Table类型
         </template>
         <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/editgrid`}">
-          <h-menu-item name="4-4">可编辑表格</h-menu-item>
+          <h-menu-item name="6-1">可编辑表格</h-menu-item>
         </router-link>
       </h-submenu>
     </h-menu>

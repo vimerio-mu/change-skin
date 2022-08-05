@@ -51,6 +51,10 @@ export default {
   margin-left: 40px;
   margin-bottom: 8px;
 }
+.settingTitle {
+  max-width: 56px;
+  word-wrap:break-word;
+}
 .colorPreview {
   height: 20px;
   width: 40px;

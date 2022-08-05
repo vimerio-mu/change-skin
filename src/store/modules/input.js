@@ -1,5 +1,5 @@
 
-const moduleAlert = {
+const moduleInput = {
   state: () => ({
     // 使用小驼峰，单引号
     inputColor: '#333',
@@ -47,4 +47,4 @@ const moduleAlert = {
     },
   }
 }
-export default moduleAlert;
+export default moduleInput;

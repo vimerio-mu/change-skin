@@ -12,6 +12,7 @@ import moduleCalendar from './modules/calendar'
 import moduledatePicker from './modules/datepicker'
 import editgridKeywords from './modules/editgrid'
 import inputKeywords from './modules/input'
+import inputNumberKeywords from './modules/inputnumber'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -36,6 +37,7 @@ const store = new Vuex.Store({
     datepicker: moduledatePicker,
     editgrid: editgridKeywords,
     input: inputKeywords,
+    inputnumber:inputNumberKeywords
   }
 })
 
