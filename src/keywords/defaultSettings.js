@@ -271,14 +271,14 @@ const defaultSeetings = {
   inputnumberAppendBackground: '#eee',
   inputnumberHandlerColor: '#999',
   inputnumberHandlerDownInnerColor: '#999',
-
+// TODO: 不知道归到哪个组件
   legendColor: '#333',
-
+// TODO: 不知道归到哪个组件
   loadingBarNormalColor: '#037df3',
-  
+  // TODO: 不知道归到哪个组件
   messageNoticeContentBoxShadow: '0 2px 8px 0 rgba(0,0,0,0.30)',
   messageNoticeContentBackground: '#fff',
-
+// TODO: 不知道归到哪个组件
   mixinContentHeaderColor: '#333',
   mixinCheckboxDisabledCheckColor: '#999999',
   mixinInputDisabledColor: '#5D6673',
@@ -294,7 +294,7 @@ const defaultSeetings = {
   msgboxBodyColor: '#333',
   msgboxTitleColor: '#333',
   msgboxContentBackgroundColor: '#fff',
-
+// TODO: 不知道归到哪个组件
   navbarBgcolor: '#F7F7F7',
   navbarColor: '#171B26',
   navbarHoverColor: '#037df3',
@@ -330,17 +330,20 @@ const defaultSeetings = {
   pageMiniItemActiveBorder: 'none',
   pageItemActiveBg: '#037df3',
   pageSimpleDisabledBackground: '#EDEDED',
+// TODO: 不知道归到哪个组件
   hPanelBtnColor: '#029AFD',
   hPanelBtnBorderColor: '#037df3',
   hPanelBtnHoverColor: '#34AEFD',
   hPanelBtnPressColor: '#0088E6',
   prPanelBgLineColor: '#F4F4F4',
+  
   poptipArrowColor: '#dddddd',
   poptipInnerBackgroundColor: '#fff',
   poptipPopperAfterBorderTopColor: '#fff',
   poptipPopperAfterBorderRightColor: '#fff',
   poptipPopperAfterBorderBottomColor: '#fff',
   poptipPopperAfterBorderLeftColor: '#fff',
+
   radioInnerAfterColor: '#999',
   radioInnerColor: '#F2F2F2',
   radioDisabledInnerBorderColor: '#d9d9d9',
@@ -350,7 +353,9 @@ const defaultSeetings = {
   radioGroupButtonWrapperDisabledHoverColor: '#ccc',
   radioGroupButtonWrapperDisabledWrapperCheckedColor: '#fff',
   radioGroupButtonWrapperDisabledWrapperCheckedBackgroundColor: '#e6e6e6',
+
   rateStarColor: '#f2b044',
+
   scrollbarBodyBgcolor: '#F5F5F5',
   scrollbarBodyColor: '#2B3643',
   scrollbarBgcolor: 'transparent',

@@ -10,9 +10,14 @@ import moduleBadge from './modules/badge'
 import moduleBacktop from './modules/backtop'
 import moduleCalendar from './modules/calendar'
 import moduledatePicker from './modules/datepicker'
-import editgridKeywords from './modules/editgrid'
-import inputKeywords from './modules/input'
-import inputNumberKeywords from './modules/inputnumber'
+import moduleEditgrid from './modules/editgrid'
+import moduleInput from './modules/input'
+import moduleInputNumber from './modules/inputnumber'
+import moduleMsgbox from './modules/msgbox'
+import moduleNotice from './modules/notice'
+import modulePage from './modules/page'
+import modulePoptip from './modules/poptip'
+import moduleRadio from './modules/radio'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -35,9 +40,14 @@ const store = new Vuex.Store({
     backtop: moduleBacktop,
     calendar: moduleCalendar,
     datepicker: moduledatePicker,
-    editgrid: editgridKeywords,
-    input: inputKeywords,
-    inputnumber:inputNumberKeywords
+    editgrid: moduleEditgrid,
+    input: moduleInput,
+    inputnumber: moduleInputNumber,
+    msgbox: moduleMsgbox,
+    notice: moduleNotice,
+    page: modulePage,
+    poptip: modulePoptip,
+    radio: moduleRadio,
   }
 })
 

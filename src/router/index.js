@@ -11,6 +11,11 @@ import DatePickerPage from '../views/components/DatePickerPage.vue'
 import EditgridPage from '../views/components/EditgridPage.vue'
 import InputPage from '../views/components/InputPage.vue'
 import InputNumberPage from '../views/components/InputNumberPage.vue'
+import MsgboxPage from '../views/components/MsgboxPage.vue'
+import NoticePage from '../views/components/NoticePage.vue'
+import PagePage from '../views/components/PagePage.vue'
+import PoptipPage from '../views/components/PoptipPage.vue'
+import RadioPage from '../views/components/RadioPage.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -55,6 +60,26 @@ const routes = [
       {
         path: 'inputnumber',
         component: InputNumberPage,
+      },
+      {
+        path: 'msgbox',
+        component: MsgboxPage,
+      },
+      {
+        path: 'notice',
+        component: NoticePage,
+      },
+      {
+        path: 'page',
+        component: PagePage,
+      },
+      {
+        path: 'poptip',
+        component: PoptipPage,
+      },
+      {
+        path: 'radio',
+        component: RadioPage,
       },
     ],
   },

@@ -37,6 +37,18 @@
         <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/calendar`}">
           <h-menu-item name="4-4">日历</h-menu-item>
         </router-link>
+        <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/msgbox`}">
+          <h-menu-item name="4-5">弹出框</h-menu-item>
+        </router-link>
+        <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/notice`}">
+          <h-menu-item name="4-6">通知提醒</h-menu-item>
+        </router-link>
+        <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/page`}">
+          <h-menu-item name="4-7">分页</h-menu-item>
+        </router-link>
+        <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/poptip`}">
+          <h-menu-item name="4-7">气泡提示</h-menu-item>
+        </router-link>
       </h-submenu>
       <h-submenu name="5">
         <template slot="title">
@@ -51,6 +63,9 @@
         </router-link>
         <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/inputnumber`}">
           <h-menu-item name="5-3">数字输入框</h-menu-item>
+        </router-link>
+        <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/radio`}">
+          <h-menu-item name="5-4">单选框</h-menu-item>
         </router-link>
       </h-submenu>
       <h-submenu name="6">
