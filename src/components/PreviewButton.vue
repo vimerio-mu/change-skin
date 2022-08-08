@@ -1,19 +1,22 @@
 <template>
-    <div class="btn-placeholder"><h-button class="btn-basic" :size="size" :class="btnClass" :style="styleObj">确定</h-button></div>
+  <div class="item">
+    <p class="btn-state-text">{{btnState}}</p> 
+    <div class="btn-placeholder"><h-button size="small" class="btn-basic btn-small" :style="styleObj">确定</h-button></div>
+    <div class="btn-placeholder"><h-button class="btn-basic btn-middle" :style="styleObj">确定</h-button></div>
+    <div class="btn-placeholder"><h-button size="large" class="btn-basic btn-large" :style="styleObj">确定</h-button></div>
+  </div>
 </template>
 
 <script>
 export default {
     name:'PreviewButton',
-    props: ['btnItem'],
+    props: ['btnState','bgColor','textColor','borderColor'],
     computed: {
-      size(){ return this.btnItem.size },
-      btnClass() { return this.btnItem.btnClass },
       styleObj(){
         return {
-          backgroundColor:this.btnItem.bgColor,
-          color:this.btnItem.textColor,
-          borderColor:this.btnItem.borderColor,
+          backgroundColor:this.bgColor,
+          color:this.textColor,
+          borderColor:this.borderColor,
         }
       }
     }
@@ -22,10 +25,26 @@ export default {
 <style scoped>
   .btn-placeholder{
     display: inline-block;
-    width: 210px;
+    /* width: 210px; */
     height: 60px;
     line-height: 60px;
     text-align: center;
+  }
+  .item{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .btn-state-text{
+    width: 96px;
+    height: 60px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 400;
   }
   .btn-basic{
     font-weight: 400;

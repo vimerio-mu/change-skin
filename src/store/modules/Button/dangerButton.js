@@ -1,4 +1,4 @@
-const moduleButtonDanger = {
+const moduleDangerButton = {
     state: {
         btnDangerColor: '#fff',
         btnDangerBg: '#f14c5d',
@@ -40,4 +40,4 @@ const moduleButtonDanger = {
         },
     }
 }
-export default moduleButtonDanger;
+export default moduleDangerButton;

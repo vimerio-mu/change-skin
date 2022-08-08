@@ -1,4 +1,4 @@
-const moduleButtonError = {
+const moduleErrorButton = {
     state: {
         btnErrorColor: '#fff',
         btnErrorBg: '#f14c5d',
@@ -40,4 +40,4 @@ const moduleButtonError = {
         },
     }
 }
-export default moduleButtonError;
+export default moduleErrorButton;

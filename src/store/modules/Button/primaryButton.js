@@ -1,4 +1,4 @@
-const moduleButtonPrimary = {
+const modulePrimaryButton = {
     state: {
         btnPrimaryColor: '#fff',
         btnPrimaryBg: '#037df3',
@@ -40,4 +40,4 @@ const moduleButtonPrimary = {
         },
     }
 }
-export default moduleButtonPrimary;
+export default modulePrimaryButton;

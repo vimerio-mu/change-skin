@@ -1,4 +1,4 @@
-const moduleButtonWarning = {
+const moduleWarningButton = {
     state: {
         btnWarningColor: '#fff',
         btnWarningBg: '#f2b044',
@@ -40,4 +40,4 @@ const moduleButtonWarning = {
         },
     }
 }
-export default moduleButtonWarning;
+export default moduleWarningButton;

@@ -1,4 +1,4 @@
-const moduleButtonDefault = {
+const moduleDefaultButton = {
     state: {
         btnDefaultColor: '#333',
         btnDefaultBg: '#037df3',
@@ -40,4 +40,4 @@ const moduleButtonDefault = {
         },
     }
 }
-export default moduleButtonDefault;
+export default moduleDefaultButton;

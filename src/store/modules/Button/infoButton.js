@@ -1,4 +1,4 @@
-const moduleButtonInfo = {
+const moduleInfoButton = {
     state: {
         btnInfoColor: '#fff',
         btnInfoBg: '#029afd',
@@ -40,4 +40,4 @@ const moduleButtonInfo = {
         },
     }
 }
-export default moduleButtonInfo;
+export default moduleInfoButton;

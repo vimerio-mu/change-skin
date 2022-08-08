@@ -1,4 +1,4 @@
-const moduleButtonGhost = {
+const moduleGhostButton = {
     state: {
         btnGhostColor: '#333',
         btnGhostBg: '#fff',
@@ -40,4 +40,4 @@ const moduleButtonGhost = {
         },
     }
 }
-export default moduleButtonGhost;
+export default moduleGhostButton;

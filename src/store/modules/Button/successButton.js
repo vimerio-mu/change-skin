@@ -1,4 +1,4 @@
-const moduleButtonSuccess = {
+const moduleSuccessButton = {
     state: {
         btnSuccessColor: '#fff',
         btnSuccessBg: '#1cb77b',
@@ -40,4 +40,4 @@ const moduleButtonSuccess = {
         },
     }
 }
-export default moduleButtonSuccess;
+export default moduleSuccessButton;
