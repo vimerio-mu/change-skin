@@ -1,4 +1,4 @@
-const moduleButton = {
+const moduleButtonBase = {
     state:{
 		btnGroupBorder: '#298DFF',
 		btnBaseColor: '#fff',
@@ -33,4 +33,4 @@ const moduleButton = {
     }
 }
 
-export default moduleButton;
+export default moduleButtonBase;

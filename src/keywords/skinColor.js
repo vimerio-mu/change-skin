@@ -1,5 +1,7 @@
 const skinColorKeywords = {
     primary:{
+        colorName:'primary',
+        colorNameCN:'品牌色',
         settings:[
             {
                 settingName: '默认',
@@ -19,6 +21,8 @@ const skinColorKeywords = {
         ]
     },
     info:{
+        colorName:'info',
+        colorNameCN:'信息色',
         settings:[
             {
                 settingName: '默认',
@@ -38,6 +42,8 @@ const skinColorKeywords = {
         ]
     },
     success:{
+        colorName:'success',
+        colorNameCN:'成功色',
         settings:[
             {
                 settingName: '默认',
@@ -57,6 +63,8 @@ const skinColorKeywords = {
         ]
     },
     warning:{
+        colorName:'warning',
+        colorNameCN:'警告色',
         settings:[
             {
                 settingName: '默认',
@@ -76,6 +84,8 @@ const skinColorKeywords = {
         ]
     },
     error:{
+        colorName:'error',
+        colorNameCN:'错误色',
         settings:[
             {
                 settingName: '默认',
@@ -95,5 +105,4 @@ const skinColorKeywords = {
         ]
     },
 }
-
 export default skinColorKeywords

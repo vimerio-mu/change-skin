@@ -9,21 +9,13 @@
         </ul>
       </titledContainer>
       <titledContainer title="功能色">
-        <ul class="list-card">
-          <skinsColorCard v-for="setting of skinColorKeywords.success.settings" :key="setting.settingName"
-            :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
-        </ul>
-        <ul class="list-card">
-          <skinsColorCard v-for="setting of skinColorKeywords.info.settings" :key="setting.settingName"
-            :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
-        </ul>
-        <ul class="list-card">
-          <skinsColorCard v-for="setting of skinColorKeywords.warning.settings" :key="setting.settingName"
-            :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
-        </ul>
-        <ul class="list-card">
-          <skinsColorCard v-for="setting of skinColorKeywords.error.settings" :key="setting.settingName"
-            :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
+        <ul>
+          <li v-for="skinColor of skinColorKeywords">
+            <ul class="list-card" v-if="skinColor.colorName!='primary'">
+              <skinsColorCard v-for="setting of skinColor.settings" :key="setting.settingName"
+                :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
+            </ul>
+          </li>
         </ul>
       </titledContainer>
     </componentPreview>
@@ -34,25 +26,16 @@
         v-for="setting of skinColorKeywords.primary.settings" :key="setting.settingName"
         :settingName="setting.settingName" :defaultColor="vm.$store.state.Base[setting.defaultColor]" :changeMethod="setting.changeMethod"/>
       </titledContainer>
-      <titledContainer title="成功色">
+      <titledContainer title="品牌色">
+        <div v-for="skinColor of skinColorKeywords">
+          <settingsTitle :title="skinColor.colorNameCN" v-if="skinColor.colorName!='primary'" />
           <settingLine 
-          v-for="setting of skinColorKeywords.success.settings" :key="setting.settingName"
-          :settingName="setting.settingName" :defaultColor="vm.$store.state.Base[setting.defaultColor]" :changeMethod="setting.changeMethod"/>
-      </titledContainer>
-      <titledContainer title="信息色">
-          <settingLine 
-          v-for="setting of skinColorKeywords.info.settings" :key="setting.settingName"
-          :settingName="setting.settingName" :defaultColor="vm.$store.state.Base[setting.defaultColor]" :changeMethod="setting.changeMethod"/>
-      </titledContainer>
-      <titledContainer title="警告色">
-          <settingLine 
-          v-for="setting of skinColorKeywords.warning.settings" :key="setting.settingName"
-          :settingName="setting.settingName" :defaultColor="vm.$store.state.Base[setting.defaultColor]" :changeMethod="setting.changeMethod"/>
-      </titledContainer>
-      <titledContainer title="错误色">
-          <settingLine 
-          v-for="setting of skinColorKeywords.error.settings" :key="setting.settingName"
-          :settingName="setting.settingName" :defaultColor="vm.$store.state.Base[setting.defaultColor]" :changeMethod="setting.changeMethod"/>
+            v-for="setting of skinColor.settings" :key="setting.settingName"
+            v-if="skinColor.colorName!='primary'"
+            :settingName="setting.settingName" 
+            :defaultColor="vm.$store.state.Base[setting.defaultColor]" 
+            :changeMethod="setting.changeMethod"/>
+        </div>
       </titledContainer>
     </componentSettings>
   </div>
@@ -64,9 +47,10 @@ import componentSettings from '../components/ComponentSettings.vue'
 import titledContainer from '../components/TitledContainer.vue'
 import settingLine from '../components/SettingLine.vue'
 import skinsColorCard from '../components/SkinsColorCard.vue'
+import settingsTitle from '../components/SettingsTitle.vue'
 import skinColorKeywords from '../keywords/skinColor.js'
 export default {
-  components: {componentPreview,componentSettings,titledContainer,settingLine,skinsColorCard},
+  components: {componentPreview,componentSettings,titledContainer,settingLine,skinsColorCard,settingsTitle},
   data() {
     return {
       vm: this,
