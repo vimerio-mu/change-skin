@@ -8,6 +8,7 @@ import BadgePage from '../views/components/BadgePage.vue'
 import BacktopPage from '../views/components/BacktopPage.vue'
 import CalendarPage from '../views/components/CalendarPage.vue'
 import DatePickerPage from '../views/components/DatePickerPage.vue'
+import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,6 +22,10 @@ const routes = [
     name: 'skins',
     component: () => import(/* webpackChunkName: "about" */ '../views/skinSettings.vue'),
     children: [
+      {
+        path:'/',
+        component: SkinColorPage
+      },
       {
         path: 'alert',
         component: AlertPage,

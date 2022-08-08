@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import titledContainer from './TitledContainer.vue'
 export default {
   components: {titledContainer},
   props: {
