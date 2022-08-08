@@ -3,15 +3,28 @@
     <!-- 预览 -->
     <componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
       <titledContainer title="品牌色">
-        <div>
-          <h-alert type="info">消息提示文案</h-alert>
-          <h-alert type="success">成功提示文案</h-alert>
-          <h-alert type="warning">警告提示文案</h-alert>
-          <h-alert type="error">错误提示文案</h-alert>
-        </div>
+        <ul class="list-card">
+          <skinsColorCard v-for="setting of skinColorKeywords.primary.settings" :key="setting.settingName"
+            :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
+        </ul>
       </titledContainer>
       <titledContainer title="功能色">
-        <skinsColorCard/>
+        <ul class="list-card">
+          <skinsColorCard v-for="setting of skinColorKeywords.success.settings" :key="setting.settingName"
+            :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
+        </ul>
+        <ul class="list-card">
+          <skinsColorCard v-for="setting of skinColorKeywords.info.settings" :key="setting.settingName"
+            :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
+        </ul>
+        <ul class="list-card">
+          <skinsColorCard v-for="setting of skinColorKeywords.warning.settings" :key="setting.settingName"
+            :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
+        </ul>
+        <ul class="list-card">
+          <skinsColorCard v-for="setting of skinColorKeywords.error.settings" :key="setting.settingName"
+            :settingName="setting.settingName" :defaultColor="$store.state.Base[setting.defaultColor]"/>
+        </ul>
       </titledContainer>
     </componentPreview>
     <!-- 修改 -->
@@ -70,5 +83,10 @@ export default {
   flex: 1;
   display: flex;
   padding-bottom: 20px;
+}
+.list-card{
+  display: flex;
+  justify-content: space-around;
+  margin: 16px auto;
 }
 </style>

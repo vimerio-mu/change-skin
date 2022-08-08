@@ -1,23 +1,22 @@
 <template>
   <h-card dis-hover class="color-card" :style="styleObj">
-    <p class="state">{{btnState}}</p>
-    <p class="color">{{colorItem.color}}</p>
+    <p class="state">{{settingNameEN}}</p>
+    <p class="color">{{defaultColor}}</p>
   </h-card>
 </template>
 
 <script>
 export default {
-    name:'SkinsColorCard',
-    props: ['colorItem'],
+    props: ['settingName','defaultColor'],
     computed: {
       styleObj(){
         return {
-          backgroundColor:this.colorItem.color,
-          borderColor:this.colorItem.color
+          backgroundColor:this.defaultColor,
+          borderColor:this.defaultColor
         }
       },
-      btnState(){
-        switch (this.colorItem.btnState) {
+      settingNameEN(){
+        switch (this.settingName) {
           case '默认':
             return 'Default';
           case '滑过':

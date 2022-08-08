@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import store from './store/index'
 import router from './router'
-import store from './store'
+// import store from './store'
 import hui from "h_ui";
 // import "h_ui/dist/h_ui.min.css";
 
