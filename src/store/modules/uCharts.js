@@ -15,7 +15,7 @@ const moduleUCharts = {
         changeUChartsStatusInfo(state,newColor){
             state.uChartsStatusInfo = newColor
         },
-        changeUChartsStatusWarnin(state,newColor){
+        changeUChartsStatusWarning(state,newColor){
             state.uChartsStatusWarning = newColor
         },
     }

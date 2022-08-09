@@ -11,6 +11,7 @@ import DatePickerPage from '../views/components/DatePickerPage.vue'
 import ButtonPage from '../views/components/ButtonPage.vue'
 import InfoPanelPage from '../views/components/InfoPanelPage'
 import SwitchPage from '../views/components/SwitchPage'
+import UChartsPage from '../views/components/UChartsPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -61,6 +62,10 @@ const routes = [
         path: 'infoPanel',
         component: InfoPanelPage,
       },
+      {
+        path:'ucharts',
+        component: UChartsPage
+      }
     ],
   },
   {
