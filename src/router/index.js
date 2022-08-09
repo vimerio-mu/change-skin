@@ -9,6 +9,8 @@ import BacktopPage from '../views/components/BacktopPage.vue'
 import CalendarPage from '../views/components/CalendarPage.vue'
 import DatePickerPage from '../views/components/DatePickerPage.vue'
 import ButtonPage from '../views/components/ButtonPage.vue'
+import InfoPanelPage from '../views/components/InfoPanelPage'
+import SwitchPage from '../views/components/SwitchPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -50,6 +52,14 @@ const routes = [
       {
         path: 'datepicker',
         component: DatePickerPage,
+      },
+      {
+        path: 'switch',
+        component: SwitchPage,
+      },
+      {
+        path: 'infoPanel',
+        component: InfoPanelPage,
       },
     ],
   },

@@ -20,6 +20,9 @@ import modulePrimaryButton from './modules/Button/primaryButton'
 import moduleSmallButton from './modules/Button/smallButton'
 import moduleSuccessButton from './modules/Button/successButton'
 import moduleWarningButton from './modules/Button/warningbutton'
+import moduleUInfoPanel from './modules/uInfoPanel'
+import moduleUCharts from './modules/uCharts'
+import moduleSwitch from './modules/switch'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -51,7 +54,10 @@ const store = new Vuex.Store({
     primaryButton:modulePrimaryButton,
     smallButton:moduleSmallButton,
     successButton:moduleSuccessButton,
-    warningButton:moduleWarningButton
+    warningButton:moduleWarningButton,
+    uInfoPanel:moduleUInfoPanel,
+    uCharts:moduleUCharts,
+    switch:moduleSwitch,
   }
 })
 

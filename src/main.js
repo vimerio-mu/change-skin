@@ -4,7 +4,7 @@ import store from './store/index'
 import router from './router'
 // import store from './store'
 import hui from "h_ui";
-// import "h_ui/dist/h_ui.min.css";
+import "h_ui/dist/h_ui.min.css";
 
 Vue.config.productionTip = false
 Vue.use(hui);

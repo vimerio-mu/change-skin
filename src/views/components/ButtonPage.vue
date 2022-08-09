@@ -21,15 +21,6 @@
             :defaultColor="vm.$store.state[button.buttonName][setting.defaultColor]"
             :changeMethod="setting.changeMethod"/>
           </div>
-          <!-- <settingLine 
-            v-for="setting of button.settings.default" :key="setting.settingName"
-            :settingName="setting.settingName" :defaultColor="vm.$store.state[button.buttonName][setting.defaultColor]" :changeMethod="setting.changeMethod"/>
-          <settingLine 
-            v-for="setting of button.settings.hover" :key="setting.settingName"
-            :settingName="setting.settingName" :defaultColor="vm.$store.state[button.buttonName][setting.defaultColor]" :changeMethod="setting.changeMethod"/>
-          <settingLine 
-            v-for="setting of button.settings.press" :key="setting.settingName"
-            :settingName="setting.settingName" :defaultColor="vm.$store.state[button.buttonName][setting.defaultColor]" :changeMethod="setting.changeMethod"/> -->
         </titledContainer>
       </div>
     </componentSettings>
