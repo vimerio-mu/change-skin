@@ -18,6 +18,9 @@ import moduleNotice from './modules/notice'
 import modulePage from './modules/page'
 import modulePoptip from './modules/poptip'
 import moduleRadio from './modules/radio'
+import moduleSelect from './modules/select'
+import moduleSelectTable from './modules/selecttable'
+import moduleSteps from './modules/steps'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -48,6 +51,9 @@ const store = new Vuex.Store({
     page: modulePage,
     poptip: modulePoptip,
     radio: moduleRadio,
+    select: moduleSelect,
+    selecttable: moduleSelectTable,
+    steps: moduleSteps,
   }
 })
 

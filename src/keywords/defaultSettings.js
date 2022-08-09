@@ -355,13 +355,14 @@ const defaultSeetings = {
   radioGroupButtonWrapperDisabledWrapperCheckedBackgroundColor: '#e6e6e6',
 
   rateStarColor: '#f2b044',
-
+// TODO: 不知道归到哪个组件
   scrollbarBodyBgcolor: '#F5F5F5',
   scrollbarBodyColor: '#2B3643',
   scrollbarBgcolor: 'transparent',
   scrollbarColor: '#B3B3B3',
   scrollbarActiveColor: '#999999',
   scrollbarHoverColor: '#d9d9d9',
+
   selectSelectionBackgroundColor: '#fff',
   selectMultipleSelectedItemFocusBackground: '#fff',
   selectSelectionHoverColor: '#3597f5',
@@ -371,10 +372,13 @@ const defaultSeetings = {
   selectBlockSelectedBackground: '#fff',
   selectBlockHideMultAfterColor: '#fff',
   selectDropdownBackgroundColor: '#fff',
+
   selectTableSelectionBackgroundColor: '#fff',
   selectTableMultipleHTagBackground: '#f5f5f5',
   selectTableMultipleHTagBorder: '1px solid #f7f7f7',
+  
   selectTreeSelectionBackgroundColor: '#fff',
+// TODO: 不知道归到哪个组件
   sidebarBgcolor: '#fff',
   sidebarSearchHoldercolor: '#999',
   sidebarSearchIconcolor: '#969696',
@@ -398,17 +402,22 @@ const defaultSeetings = {
   sidebarItemColor: '#037df3',
   sidebarSearchColor: '#192229',
   sidebarHoverBgcolor: '#F6F6F6',
+// TODO: 不知道归到哪个组件
   spinColor: '#037df3',
   spinFixBackgroundColor: 'rgba(255,255,255,.9)',
+
   stepsDefaultColor: '#037df3',
   stepContentColor: '#7E828A',
   stepActiveColor: '#8ECCFF',
+// TODO: 不知道归到哪个组件
   stickbarBgcolor: '#fff',
   stickbarLinearIconColor: 'linear-gradient(to right, #07B4FA, #037DF3)',
+  
   switchBorderColor: '#c3cbd6',
   switchBackgroundColor: '#c3cbd6',
   switchDisabledBackgroundColor: '#d7dde4',
   switchDisabledBorderColor: '#d7dde4',
+
   tableRowDragoverTdColor: '#fff',
   tableSummationBorder: '1px solid #dce1e7',
   tabsNavTabColor: '#333333',
@@ -421,11 +430,14 @@ const defaultSeetings = {
   tabsBarActiveColor: '#037df3',
   tabsTabInkBarBg: '#037df3',
   tabsBarBorderBottom: '1px solid #D9D9D9',
+
   selectTagBackground: '#f1f1f1',
+
   tagBackground: '#F7F7F7',
   tagColor: '#333',
   tagDotBackground: '#fff',
   tagBorderBackground: '#fff',
+
   topbarBaseColor: '#fff',
   topbarBgcolor: '#037df3',
   topbarColor: '#fff',

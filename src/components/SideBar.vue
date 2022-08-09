@@ -49,6 +49,9 @@
         <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/poptip`}">
           <h-menu-item name="4-7">气泡提示</h-menu-item>
         </router-link>
+        <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/steps`}">
+          <h-menu-item name="4-7">步骤条</h-menu-item>
+        </router-link>
       </h-submenu>
       <h-submenu name="5">
         <template slot="title">
@@ -67,6 +70,9 @@
         <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/radio`}">
           <h-menu-item name="5-4">单选框</h-menu-item>
         </router-link>
+        <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/select`}">
+          <h-menu-item name="5-5">选择器</h-menu-item>
+        </router-link>
       </h-submenu>
       <h-submenu name="6">
         <template slot="title">
@@ -75,6 +81,9 @@
         </template>
         <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/editgrid`}">
           <h-menu-item name="6-1">可编辑表格</h-menu-item>
+        </router-link>
+        <router-link :to="{path:`/skins/${this.$router.history.current.params.name}/selecttable`}">
+          <h-menu-item name="6-1">下拉表格</h-menu-item>
         </router-link>
       </h-submenu>
     </h-menu>

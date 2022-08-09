@@ -16,6 +16,9 @@ import NoticePage from '../views/components/NoticePage.vue'
 import PagePage from '../views/components/PagePage.vue'
 import PoptipPage from '../views/components/PoptipPage.vue'
 import RadioPage from '../views/components/RadioPage.vue'
+import SelectPage from '../views/components/SelectPage.vue'
+import SelectTablePage from '../views/components/SelectTablePage.vue'
+import StepsPage from '../views/components/StepsPage.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -80,6 +83,18 @@ const routes = [
       {
         path: 'radio',
         component: RadioPage,
+      },
+      {
+        path: 'select',
+        component: SelectPage,
+      },
+      {
+        path: 'selecttable',
+        component: SelectTablePage,
+      },
+      {
+        path: 'steps',
+        component: StepsPage,
       },
     ],
   },
