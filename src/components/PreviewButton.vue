@@ -1,6 +1,6 @@
 <template>
   <div class="item">
-    <p class="btn-state-text">{{btnState}}</p> 
+    <p class="btn-state-text">{{btnStatus}}</p> 
     <div class="btn-placeholder"><h-button size="small" class="btn-basic btn-small" :style="styleObj">确定</h-button></div>
     <div class="btn-placeholder"><h-button class="btn-basic btn-middle" :style="styleObj">确定</h-button></div>
     <div class="btn-placeholder"><h-button size="large" class="btn-basic btn-large" :style="styleObj">确定</h-button></div>
@@ -10,7 +10,7 @@
 <script>
 export default {
     name:'PreviewButton',
-    props: ['btnState','bgColor','textColor','borderColor'],
+    props: ['btnStatus','bgColor','textColor','borderColor'],
     computed: {
       styleObj(){
         return {

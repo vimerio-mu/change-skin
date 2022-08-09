@@ -4,7 +4,7 @@
       <div v-for="button of buttonKeywords">
         <titledContainer :title="button.buttonNameCN">
           <previewButton v-for="btn of button.settings"
-           :btnState="btn[0].settingName.substring(0,2)"
+           :btnStatus="btn[0].settingName.substring(0,2)"
            :bgColor="vm.$store.state[button.buttonName][btn[0].defaultColor]"
            :textColor="vm.$store.state[button.buttonName][btn[1].defaultColor]"
            :borderColor="vm.$store.state[button.buttonName][btn[2].defaultColor]" />
