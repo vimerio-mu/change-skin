@@ -2,13 +2,25 @@
   <div class="layout-content-main">
     <componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
       <!-- 信息色 -->
-      <div class="colorPreview" :style="{backgroundColor:$store.state.uCharts.uChartsStatusInfo}"></div>
+      <div class="colorPreview">
+        <p>信息色</p>
+        <div class="color-div" :style="{backgroundColor:$store.state.uCharts.uChartsStatusInfo}"></div>
+      </div>
       <!-- 成功色 -->
-      <div class="colorPreview" :style="{backgroundColor:$store.state.uCharts.uChartsStatusSuccess}"></div>
+      <div class="colorPreview">
+        <p>成功色</p>
+        <div class="color-div" :style="{backgroundColor:$store.state.uCharts.uChartsStatusSuccess}"></div>
+      </div>
       <!-- 错误色 -->
-      <div class="colorPreview" :style="{backgroundColor:$store.state.uCharts.uChartsStatusError}"></div>
+      <div class="colorPreview">
+        <p>错误色</p>
+        <div class="color-div" :style="{backgroundColor:$store.state.uCharts.uChartsStatusError}"></div>
+      </div>
       <!-- 警告色 -->
-      <div class="colorPreview" :style="{backgroundColor:$store.state.uCharts.uChartsStatusWarning}"></div>
+      <div class="colorPreview">
+        <p>警告色</p>
+        <div class="color-div" :style="{backgroundColor:$store.state.uCharts.uChartsStatusWarning}"></div>
+      </div>
 
       <!-- 信息色 -->
       <!-- <h-circle style="marginRight:12px;" :percent="80" :stroke-color="$store.state.uCharts.uChartsStatusInfo">
@@ -70,10 +82,21 @@ export default {
   display: flex;
 }
 .colorPreview {
-  height: 20px;
-  width: 40px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  line-height: 60px;
+  margin:20px auto;
+  text-align: center;
+  color:black;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: PingFangSC-Medium;
+}
+.color-div{
+  height: 60px;
+  width: 60%;
   border-radius: 3px;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 20px;
 }
 </style>
