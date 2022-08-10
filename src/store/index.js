@@ -23,6 +23,7 @@ import moduleWarningButton from './modules/Button/warningbutton'
 import moduleUInfoPanel from './modules/uInfoPanel'
 import moduleUCharts from './modules/uCharts'
 import moduleSwitch from './modules/switch'
+import moduleIconRank from './modules/iconRank'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -58,6 +59,8 @@ const store = new Vuex.Store({
     uInfoPanel:moduleUInfoPanel,
     uCharts:moduleUCharts,
     switch:moduleSwitch,
+    iconRank:moduleIconRank,
+
   }
 })
 

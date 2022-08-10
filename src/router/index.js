@@ -9,7 +9,7 @@ import BacktopPage from '../views/components/BacktopPage.vue'
 import CalendarPage from '../views/components/CalendarPage.vue'
 import DatePickerPage from '../views/components/DatePickerPage.vue'
 import ButtonPage from '../views/components/ButtonPage.vue'
-import InfoPanelPage from '../views/components/InfoPanelPage'
+import UInfoPanelPage from '../views/components/UInfoPanelPage'
 import SwitchPage from '../views/components/SwitchPage'
 import UChartsPage from '../views/components/UChartsPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
@@ -59,8 +59,8 @@ const routes = [
         component: SwitchPage,
       },
       {
-        path: 'infoPanel',
-        component: InfoPanelPage,
+        path: 'uinfoPanel',
+        component: UInfoPanelPage,
       },
       {
         path:'ucharts',
