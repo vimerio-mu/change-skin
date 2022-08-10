@@ -1,12 +1,12 @@
 const uSimpledictKeywords = {
     settings:[
         {
-            settingName: '背景',
+            settingName: '默认背景',
             defaultColor: "uMoredatapanelBackground",
             changeMethod: "changeUMoredatapanelBackground"
         },
         {
-            settingName: '文字',
+            settingName: '默认文字',
             defaultColor: "uMoredatapanelColor",
             changeMethod: "changeUMoredatapanelColor"
         },
