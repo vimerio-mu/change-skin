@@ -6,13 +6,13 @@
         <p style="font-size:20px;">
             UF30中没有对应组件！
         </p>
-        <previewColorCard v-for="setting of iconRankKeywords.base.settings" :previewColor="vm.$store.state.iconRank[setting.defaultColor]" :previewTitle="setting.defaultColor" />
+        <previewColorCard v-for="setting of iconRankKeywords.settings" :previewColor="vm.$store.state.iconRank[setting.defaultColor]" :previewTitle="setting.defaultColor" />
     </titledContainer>
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
         <titledContainer title="iconRank">
-          <settingLine v-for="setting of iconRankKeywords.base.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.iconRank[setting.defaultColor]"
+          <settingLine v-for="setting of iconRankKeywords.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.iconRank[setting.defaultColor]"
             :changeMethod="setting.changeMethod" />
         </titledContainer>
     </componentSettings>
