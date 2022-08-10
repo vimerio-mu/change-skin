@@ -12,6 +12,7 @@ import ButtonPage from '../views/components/ButtonPage.vue'
 import UInfoPanelPage from '../views/components/UInfoPanelPage'
 import SwitchPage from '../views/components/SwitchPage'
 import UChartsPage from '../views/components/UChartsPage'
+import IconRankPage from '../views/components/IconRankPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -26,14 +27,8 @@ const routes = [
     name: 'skins',
     component: () => import(/* webpackChunkName: "about" */ '../views/skinSettings.vue'),
     children: [
-      {
-        path:'/',
-        component: SkinColorPage
-      },
-      {
-        path:'button',
-        component: ButtonPage
-      },
+      {path:'/',component: SkinColorPage},
+      {path:'button',component: ButtonPage},
       {
         path: 'alert',
         component: AlertPage,
@@ -54,18 +49,10 @@ const routes = [
         path: 'datepicker',
         component: DatePickerPage,
       },
-      {
-        path: 'switch',
-        component: SwitchPage,
-      },
-      {
-        path: 'uinfoPanel',
-        component: UInfoPanelPage,
-      },
-      {
-        path:'ucharts',
-        component: UChartsPage
-      }
+      {path: 'switch',component: SwitchPage,},
+      {path: 'uinfoPanel',component: UInfoPanelPage,},
+      {path:'ucharts',component: UChartsPage},
+      { path:'iconrank',component:IconRankPage}
     ],
   },
   {
