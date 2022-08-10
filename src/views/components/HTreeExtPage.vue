@@ -8,7 +8,7 @@
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
-        <titledContainer title="树">
+        <titledContainer title="树形组件">
           <settingLine v-for="setting of hTreeExtKeywords.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.hTreeExt[setting.defaultColor]"
             :changeMethod="setting.changeMethod" />
         </titledContainer>
