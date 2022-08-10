@@ -10,44 +10,18 @@
           </div>
         </u-info-pannel>
       <!-- </titledContainer> -->
-      <!-- <titledContainer title="默认关闭,小标记默认关闭,小标记">
-        <u-info-pannel @statusChange="statusChange" :indicator="true" :collapse="true" title="默认关闭,小标记" :collapsable="true">
-          <div slot="content">
-            默认关闭的
-          </div>
-        </u-info-pannel>
-      </titledContainer>
-      <titledContainer title="我是可以折叠的">
+      <!-- 
         <u-info-pannel @statusChange="statusChange" title="我是可以折叠的" :collapsable="true">
           <div slot="content">
             我是被折叠的内容,状态变化看action面板
           </div>
         </u-info-pannel>
-      </titledContainer>
-      <titledContainer title="我折叠不了">
         <u-info-pannel :collapsable="false" @statusChange="statusChange" title="我折叠不了">
           <div slot="content">
             我是一直被展示
           </div>
         </u-info-pannel>
-      </titledContainer>
-      <titledContainer title="标题后面加东西">
-        <u-info-pannel :collapsable="false" @statusChange="statusChange" title="标题后面加点">
-          <div slot="title">
-            标题后面
-          </div>
-          <div slot="content">
-            我是内容
-          </div>
-        </u-info-pannel>
-      </titledContainer>
-      <titledContainer title="标题中有内容是异步获取的">
-        <u-info-pannel :collapsable="false" :isAsyncTitle="isAsyncTitle" :title="asyncTitle">
-          <div slot="content">
-            我是内容
-          </div>
-        </u-info-pannel>
-      </titledContainer> -->
+       -->
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
