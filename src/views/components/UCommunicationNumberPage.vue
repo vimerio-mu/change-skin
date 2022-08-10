@@ -12,7 +12,7 @@
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
-        <titledContainer title="iconRank">
+        <titledContainer title="联系方式输入框">
           <settingLine v-for="setting of uCommunicationNumberKeywords.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.uCommunicationNumber[setting.defaultColor]"
             :changeMethod="setting.changeMethod" />
         </titledContainer>
