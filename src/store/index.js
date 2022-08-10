@@ -25,6 +25,8 @@ import moduleUCharts from './modules/uCharts'
 import moduleSwitch from './modules/switch'
 import moduleIconRank from './modules/iconRank'
 import moduleIconHover from './modules/iconHover'
+import moduleSwitchDescribe from './modules/switchDescribe'
+import moduleCompareIcon from './modules/compareIcon'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -62,7 +64,8 @@ const store = new Vuex.Store({
     switch:moduleSwitch,
     iconRank:moduleIconRank,
     iconHover:moduleIconHover,
-    
+    switchDescribe:moduleSwitchDescribe,
+    compareIcon:moduleCompareIcon,
   }
 })
 

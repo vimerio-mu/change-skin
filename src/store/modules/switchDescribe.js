@@ -4,10 +4,10 @@ const moduleSwitchDescribe = {
         uSwitchDescribeColor: '#000',
     },
     mutations: {
-        uSwitchDescribeBackground(state,newColor){
+        changeUSwitchDescribeBackground(state,newColor){
             state.uSwitchDescribeBackground = newColor
         },
-        uSwitchDescribeColor(state,newColor){
+        changeUSwitchDescribeColor(state,newColor){
             state.uSwitchDescribeColor = newColor
         },
     }

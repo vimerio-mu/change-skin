@@ -14,6 +14,8 @@ import SwitchPage from '../views/components/SwitchPage'
 import UChartsPage from '../views/components/UChartsPage'
 import IconRankPage from '../views/components/IconRankPage'
 import IconHoverPage from '../views/components/IconHoverPage'
+import SwitchDescribePage from '../views/components/SwitchDescribePage'
+import CompareIconPage from '../views/components/CompareIconPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -55,6 +57,8 @@ const routes = [
       {path:'ucharts',component: UChartsPage},
       { path:'iconrank',component:IconRankPage},
       { path:'iconhover',component:IconHoverPage},
+      { path:'switchdescribe',component:SwitchDescribePage},
+      { path:'compareicon',component:CompareIconPage},
     ],
   },
   {
