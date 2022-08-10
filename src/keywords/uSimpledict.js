@@ -6,7 +6,7 @@ const uSimpledictKeywords = {
             changeMethod: "changeUMoredatapanelBackground"
         },
         {
-            settingName: '字体',
+            settingName: '文字',
             defaultColor: "uMoredatapanelColor",
             changeMethod: "changeUMoredatapanelColor"
         },
@@ -21,7 +21,7 @@ const uSimpledictKeywords = {
             changeMethod: "changeUMoredatapaneldetailitemBackground"
         },
         {
-            settingName: '详情条目字体',
+            settingName: '详情条目文字',
             defaultColor: "uMoredatapaneldetailitemColor",
             changeMethod: "changeUMoredatapaneldetailitemColor"
         },

@@ -2,7 +2,7 @@ const iconHoverKeywords = {
     base:{
         settings:[
             {
-                settingName:'字体颜色',
+                settingName:'文字颜色',
                 defaultColor:'iconHoverZyboxColor',
                 changeMethod:'changeIconHoverZyboxColor',
             },
