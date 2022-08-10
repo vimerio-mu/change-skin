@@ -30,6 +30,7 @@ import moduleCompareIcon from './modules/compareIcon'
 import moduleUSimpledict from './modules/uSimpledict'
 import moduleUCommunicationNumber from './modules/uCommunicationNumber'
 import moduleHTreeExt from './modules/hTreeExt'
+import moduleWaves from './modules/waves'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -72,6 +73,7 @@ const store = new Vuex.Store({
     uSimpledict:moduleUSimpledict,
     uCommunicationNumber:moduleUCommunicationNumber,
     hTreeExt:moduleHTreeExt,
+    waves:moduleWaves,
   }
 })
 
