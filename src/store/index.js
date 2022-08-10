@@ -32,6 +32,7 @@ import moduleUCommunicationNumber from './modules/uCommunicationNumber'
 import moduleHTreeExt from './modules/hTreeExt'
 import moduleWaves from './modules/waves'
 import moduleWaterMark from './modules/waterMark'
+import moduleTypeField from './modules/typeField'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -76,6 +77,7 @@ const store = new Vuex.Store({
     hTreeExt:moduleHTreeExt,
     waves:moduleWaves,
     waterMark:moduleWaterMark,
+    typeField:moduleTypeField,
   }
 })
 

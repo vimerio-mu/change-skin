@@ -21,6 +21,7 @@ import UCommunicationNumberPage from '../views/components/UCommunicationNumberPa
 import HTreeExtPage from '../views/components/HTreeExtPage'
 import WavesPage from '../views/components/WavesPage'
 import WaterMarkPage from '../views/components/WaterMarkPage'
+import TypeFieldPage from '../views/components/TypeFieldPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -69,6 +70,7 @@ const routes = [
       { path:'htreeExt',component:HTreeExtPage},
       { path:'waves',component:WavesPage},
       { path:'watermark',component:WaterMarkPage},
+      { path:'typeField',component:TypeFieldPage},
     ],
   },
   {
