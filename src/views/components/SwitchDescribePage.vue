@@ -3,13 +3,13 @@
     <!-- 预览 -->
 	  <componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
       <titledContainer title="颜色属性">
-          <!-- <previewColorCard v-for="setting of switchDescribeKeywords.base.settings" :previewColor="vm.$store.state.iconHover[setting.defaultColor]" :previewTitle="setting.defaultColor" /> -->
+          <!-- <previewColorCard v-for="setting of switchDescribeKeywords.settings" :previewColor="vm.$store.state.switchDescribe[setting.defaultColor]" :previewTitle="setting.defaultColor" /> -->
       </titledContainer>
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
-        <titledContainer title="iconRank">
-          <settingLine v-for="setting of switchDescribeKeywords.base.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.switchDescribe[setting.defaultColor]"
+        <titledContainer title="带描述信息的开关">
+          <settingLine v-for="setting of switchDescribeKeywords.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.switchDescribe[setting.defaultColor]"
             :changeMethod="setting.changeMethod" />
         </titledContainer>
     </componentSettings>
