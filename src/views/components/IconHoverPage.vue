@@ -6,13 +6,13 @@
         <p style="font-size:20px;">
             UF30中没有对应组件！
         </p>
-        <previewColorCard v-for="setting of iconHoverKeywords.base.settings" :previewColor="vm.$store.state.iconHover[setting.defaultColor]" :previewTitle="setting.defaultColor" />
+        <previewColorCard v-for="setting of iconHoverKeywords.settings" :previewColor="vm.$store.state.iconHover[setting.defaultColor]" :previewTitle="setting.defaultColor" />
     </titledContainer>
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
         <titledContainer title="IconHover">
-          <settingLine v-for="setting of iconHoverKeywords.base.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.iconHover[setting.defaultColor]"
+          <settingLine v-for="setting of iconHoverKeywords.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.iconHover[setting.defaultColor]"
             :changeMethod="setting.changeMethod" />
         </titledContainer>
     </componentSettings>
