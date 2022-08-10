@@ -16,6 +16,7 @@ import IconRankPage from '../views/components/IconRankPage'
 import IconHoverPage from '../views/components/IconHoverPage'
 import SwitchDescribePage from '../views/components/SwitchDescribePage'
 import CompareIconPage from '../views/components/CompareIconPage'
+import USimpledictPage from '../views/components/USimpledictPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -59,6 +60,7 @@ const routes = [
       { path:'iconhover',component:IconHoverPage},
       { path:'switchdescribe',component:SwitchDescribePage},
       { path:'compareicon',component:CompareIconPage},
+      { path:'simpledict',component:USimpledictPage},
     ],
   },
   {
