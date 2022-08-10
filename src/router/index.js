@@ -20,6 +20,7 @@ import USimpledictPage from '../views/components/USimpledictPage'
 import UCommunicationNumberPage from '../views/components/UCommunicationNumberPage'
 import HTreeExtPage from '../views/components/HTreeExtPage'
 import WavesPage from '../views/components/WavesPage'
+import WaterMarkPage from '../views/components/WaterMarkPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -67,6 +68,7 @@ const routes = [
       { path:'communicationNumber',component:UCommunicationNumberPage},
       { path:'htreeExt',component:HTreeExtPage},
       { path:'waves',component:WavesPage},
+      { path:'watermark',component:WaterMarkPage},
     ],
   },
   {
