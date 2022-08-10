@@ -1,14 +1,14 @@
 const moduleUCommunicationNumber = {
     state: {
-        uCommunicationNumberAreacodedetailBackgroundColor: 'white',
-        uCommunicationNumberAreacodedetailColor: '#333',
         uCommunicationNumberAreaselectboxBackgroundColor: 'white',
         uCommunicationNumberAreaselectboxColor: '#333',
+        uCommunicationNumberAreacodedetailBackgroundColor: 'white',
+        uCommunicationNumberAreacodedetailColor: '#333',
         uCommunicationNumberAreaCodeFocusBorderColor: '#5dacf7',
         uCommunicationNumberAreaCodeHoverBorderColor: '#5dacf7',
+        uCommunicationNumberAreacodeerrorBorderColor: '#d9d9d9',
         uCommunicationNumberAreacodeiconColor: '#999',
         uCommunicationNumberHinputiconColor: '#999',
-        uCommunicationNumberAreacodeerrorBorderColor: '#d9d9d9',
         uCommunicationNumberHinputreadonlyBackground: 'white',
         uCommunicationNumberHinputdisabledBackground: '#ededed',
     },

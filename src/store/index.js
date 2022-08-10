@@ -28,6 +28,7 @@ import moduleIconHover from './modules/iconHover'
 import moduleSwitchDescribe from './modules/switchDescribe'
 import moduleCompareIcon from './modules/compareIcon'
 import moduleUSimpledict from './modules/uSimpledict'
+import moduleUCommunicationNumber from './modules/uCommunicationNumber'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -68,6 +69,7 @@ const store = new Vuex.Store({
     switchDescribe:moduleSwitchDescribe,
     compareIcon:moduleCompareIcon,
     uSimpledict:moduleUSimpledict,
+    uCommunicationNumber:moduleUCommunicationNumber,
   }
 })
 
