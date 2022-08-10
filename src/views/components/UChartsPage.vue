@@ -1,27 +1,14 @@
 <template>
   <div class="layout-content-main">
-    <componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
-      <!-- 信息色 -->
-      <div class="colorPreview">
-        <p>信息色</p>
-        <div class="color-div" :style="{backgroundColor:$store.state.uCharts.uChartsStatusInfo}"></div>
-      </div>
-      <!-- 成功色 -->
-      <div class="colorPreview">
-        <p>成功色</p>
-        <div class="color-div" :style="{backgroundColor:$store.state.uCharts.uChartsStatusSuccess}"></div>
-      </div>
-      <!-- 错误色 -->
-      <div class="colorPreview">
-        <p>错误色</p>
-        <div class="color-div" :style="{backgroundColor:$store.state.uCharts.uChartsStatusError}"></div>
-      </div>
-      <!-- 警告色 -->
-      <div class="colorPreview">
-        <p>警告色</p>
-        <div class="color-div" :style="{backgroundColor:$store.state.uCharts.uChartsStatusWarning}"></div>
-      </div>
-
+      <titledContainer title="颜色属性">
+    <p style="font-size:24px;">
+      UF30中没有对应组件！  
+    </p>
+        <div v-for="ucharts of uChartsKeywords" :key="ucharts.chartsName">
+          <previewColorCard v-for="setting of ucharts.settings" :previewColor="vm.$store.state.uCharts[setting.defaultColor]" :previewTitle="setting.defaultColor"/>
+        </div>
+      </titledContainer>
+      
       <!-- 信息色 -->
       <!-- <h-circle style="marginRight:12px;" :percent="80" :stroke-color="$store.state.uCharts.uChartsStatusInfo">
         <span class="demo-circle-inner" style="font-size: 24px;">80%</span>
@@ -62,9 +49,10 @@ import componentPreview from '../../components/ComponentPreview.vue'
 import componentSettings from '../../components/ComponentSettings.vue'
 import titledContainer from '../../components/TitledContainer.vue'
 import settingLine from '../../components/SettingLine.vue'
+import previewColorCard from '../../components/PreviewColorCard.vue'
 import uChartsKeywords from '../../keywords/uCharts.js'
 export default {
-  components: {componentPreview, componentSettings,titledContainer,settingLine},
+  components: {componentPreview, componentSettings,titledContainer,settingLine,previewColorCard},
   data() {
     return {
       vm: this,
@@ -80,23 +68,5 @@ export default {
   margin: 8px;
   flex: 1;
   display: flex;
-}
-.colorPreview {
-  display: flex;
-  justify-content: center;
-  height: 60px;
-  line-height: 60px;
-  margin:20px auto;
-  text-align: center;
-  color:black;
-  font-weight: 500;
-  font-size: 16px;
-  font-family: PingFangSC-Medium;
-}
-.color-div{
-  height: 60px;
-  width: 60%;
-  border-radius: 3px;
-  margin-left: 20px;
 }
 </style>
