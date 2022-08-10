@@ -39,7 +39,7 @@ export default {
   display: flex;
   justify-content: flex-start;
   width: 30%;
-  min-width: 230px;
+  min-width: 280px;
   /* margin-right: 30px; */
 }
 .color-div{

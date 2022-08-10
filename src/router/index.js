@@ -18,6 +18,7 @@ import SwitchDescribePage from '../views/components/SwitchDescribePage'
 import CompareIconPage from '../views/components/CompareIconPage'
 import USimpledictPage from '../views/components/USimpledictPage'
 import UCommunicationNumberPage from '../views/components/UCommunicationNumberPage'
+import HTreeExtPage from '../views/components/HTreeExtPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -63,6 +64,7 @@ const routes = [
       { path:'compareicon',component:CompareIconPage},
       { path:'simpledict',component:USimpledictPage},
       { path:'communicationNumber',component:UCommunicationNumberPage},
+      { path:'htreeExt',component:HTreeExtPage},
     ],
   },
   {
