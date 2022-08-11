@@ -13,7 +13,7 @@
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
-        <titledContainer title="iconRank">
+        <titledContainer title="搜索树">
           <settingLine v-for="setting of treeKeywords.settings" :key="setting.settingName" 
             :settingName="setting.settingName" 
             :defaultColor="vm.$store.state.tree[setting.defaultColor]"
