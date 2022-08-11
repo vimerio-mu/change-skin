@@ -24,6 +24,7 @@ import WaterMarkPage from '../views/components/WaterMarkPage'
 import TypeFieldPage from '../views/components/TypeFieldPage'
 import TreePage from '../views/components/TreePage'
 import TransferTablePage from '../views/components/TransferTablePage'
+import TransferPage from '../views/components/TransferPage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -75,6 +76,7 @@ const routes = [
       { path:'typeField',component:TypeFieldPage},
       { path:'tree',component:TreePage},
       { path:'transferTable',component:TransferTablePage},
+      { path:'transfer',component:TransferPage},
     ],
   },
   {

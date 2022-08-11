@@ -35,6 +35,7 @@ import moduleWaterMark from './modules/waterMark'
 import moduleTypeField from './modules/typeField'
 import moduleTree from './modules/tree'
 import moduleTransferTable from './modules/transferTable'
+import moduleTransfer from './modules/transfer'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -82,6 +83,7 @@ const store = new Vuex.Store({
     typeField:moduleTypeField,
     tree:moduleTree,
     transferTable:moduleTransferTable,
+    transfer:moduleTransfer,
   }
 })
 
