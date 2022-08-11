@@ -36,6 +36,7 @@ import moduleTypeField from './modules/typeField'
 import moduleTree from './modules/tree'
 import moduleTransferTable from './modules/transferTable'
 import moduleTransfer from './modules/transfer'
+import moduleTopbar from './modules/topbar'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -84,6 +85,7 @@ const store = new Vuex.Store({
     tree:moduleTree,
     transferTable:moduleTransferTable,
     transfer:moduleTransfer,
+    topbar:moduleTopbar,
   }
 })
 

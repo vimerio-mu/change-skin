@@ -2,6 +2,7 @@ const moduleUCommunicationNumber = {
     state: {
         uCommunicationNumberAreaselectboxBackgroundColor: 'white',
         uCommunicationNumberAreaselectboxColor: '#333',
+        uCommunicationNumberAreaselectitemHoverBackground: 'rgba(2, 112, 218, .1)',
         uCommunicationNumberAreacodedetailBackgroundColor: 'white',
         uCommunicationNumberAreacodedetailColor: '#333',
         uCommunicationNumberAreaCodeFocusBorderColor: '#5dacf7',
@@ -11,6 +12,9 @@ const moduleUCommunicationNumber = {
         uCommunicationNumberHinputiconColor: '#999',
         uCommunicationNumberHinputreadonlyBackground: 'white',
         uCommunicationNumberHinputdisabledBackground: '#ededed',
+        uCommunicationNumberAreacodedetailBoxShadow: '0px 2px 8px 0px rgba(0,0,0,0.2)',
+        uCommunicationNumberAreaselectboxBoxShadow: '0px 2px 8px 0px rgba(0,0,0,0.2)',
+        uCommunicationNumberAreaCodeFocusShadow: '0 0 0 2px rgba(2, 112, 218, .2)',
     },
     mutations: {
         changeUCommunicationNumberAreacodedetailBackgroundColor(state,newColor){
@@ -18,6 +22,9 @@ const moduleUCommunicationNumber = {
         },
         changeUCommunicationNumberAreacodedetailColor(state,newColor){
             state.uCommunicationNumberAreacodedetailColor = newColor
+        },
+        changeUCommunicationNumberAreaselectitemHoverBackground(state,newColor){
+            state.uCommunicationNumberAreaselectitemHoverBackground = newColor
         },
         changeUCommunicationNumberAreaselectboxBackgroundColor(state,newColor){
             state.uCommunicationNumberAreaselectboxBackgroundColor = newColor
@@ -45,6 +52,15 @@ const moduleUCommunicationNumber = {
         },
         changeUCommunicationNumberHinputdisabledBackground(state,newColor){
             state.uCommunicationNumberHinputdisabledBackground = newColor
+        },
+        changeUCommunicationNumberAreacodedetailBoxShadow(state,newColor){
+            // state.uCommunicationNumberAreacodedetailBoxShadow = newColor
+        },
+        changeUCommunicationNumberAreaselectboxBoxShadow(state,newColor){
+            // state.uCommunicationNumberAreaselectboxBoxShadow = newColor
+        },
+        changeUCommunicationNumberAreaCodeFocusShadow(state,newColor){
+            // state.uCommunicationNumberAreaCodeFocusShadow = newColor
         },
     }
 }

@@ -1,14 +1,19 @@
 const uCommunicationNumberKeywords = {
     settings:[
         {
-            settingName: '下拉框背景',
+            settingName: '区号选择框背景',
             defaultColor: "uCommunicationNumberAreaselectboxBackgroundColor",
             changeMethod: "changeUCommunicationNumberAreaselectboxBackgroundColor"
         },
         {
-            settingName: '下拉框文字',
+            settingName: '区号选择框文字',
             defaultColor: "uCommunicationNumberAreaselectboxColor",
             changeMethod: "changeUCommunicationNumberAreaselectboxColor"
+        },
+        {
+            settingName: '区号选择项滑过背景',
+            defaultColor: "uCommunicationNumberAreaselectitemHoverBackground",
+            changeMethod: "changeUCommunicationNumberAreaselectitemHoverBackground"
         },
         {
             settingName: '区号详情背景',

@@ -5,6 +5,7 @@ const moduleUSimpledict = {
         uMoredatapaneldetailBackground: 'white',
         uMoredatapaneldetailitemBackground: '#f5f5f5',
         uMoredatapaneldetailitemColor: '#000',
+        uMoredatapaneldetailitemBorder: 'none',
     },
     mutations: {
         changeUMoredatapanelBackground(state,newColor){
@@ -22,6 +23,9 @@ const moduleUSimpledict = {
         changeUMoredatapaneldetailitemColor(state,newColor){
             state.uMoredatapaneldetailitemColor = newColor
         },
+        changeUMoredatapaneldetailitemBorder(state,newColor){
+            // state.uMoredatapaneldetailitemBorder = newColor
+        }
     }
 }
 
