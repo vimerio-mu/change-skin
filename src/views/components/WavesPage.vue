@@ -3,9 +3,9 @@
     <!-- 预览 -->
 	<componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
     <titledContainer title="颜色属性">
-        <!-- <p style="font-size:20px;">
+        <p style="font-size:20px;">
             UF30中没有对应组件！
-        </p> -->
+        </p>
         <previewColorCard v-for="setting of wavesKeywords.settings" 
             :previewColor="vm.$store.state.waves[setting.defaultColor]" 
             :previewTitle="setting.defaultColor" />

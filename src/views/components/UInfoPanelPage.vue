@@ -2,26 +2,15 @@
   <div class="layout-content-main">
     <!-- 预览 -->
     <componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
-      <!-- <titledContainer title="底下有线的,右侧有slot"> -->
-        <u-info-pannel :collapsable="false" :hasDashline="false" title="底下有线的,右侧有slot">
+        <p style="fontSize:20px">
+          UF30中对应组件待引入
+        </p>
+        <!-- <u-info-pannel :collapsable="false" :hasDashline="false" title="底下有线的,右侧有slot">
           <h-icon slot="right" name="mail" size="20"></h-icon>
           <div slot="content">
             我是内容
           </div>
-        </u-info-pannel>
-      <!-- </titledContainer> -->
-      <!-- 
-        <u-info-pannel @statusChange="statusChange" title="我是可以折叠的" :collapsable="true">
-          <div slot="content">
-            我是被折叠的内容,状态变化看action面板
-          </div>
-        </u-info-pannel>
-        <u-info-pannel :collapsable="false" @statusChange="statusChange" title="我折叠不了">
-          <div slot="content">
-            我是一直被展示
-          </div>
-        </u-info-pannel>
-       -->
+        </u-info-pannel> -->
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">

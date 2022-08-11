@@ -1,21 +1,19 @@
 <template>
   <div class="layout-content-main">
     <!-- 预览 -->
-	<componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
-    <titledContainer title="颜色属性">
-        <previewColorCard v-for="setting of typeFieldKeywords.settings" 
-            :previewColor="vm.$store.state.typeField[setting.defaultColor]" 
-            :previewTitle="setting.defaultColor" />
-    </titledContainer>
+    <componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
+      <titledContainer title="颜色属性">
+        <h-typefield type="money" placeholder="金额" bigTips style="margin-bottom: 10px;"></h-typefield>
+        <h-typefield type="money" placeholder="金额" readonly style="margin-bottom: 10px;"></h-typefield>
+        <h-typefield type="money" placeholder="金额" disabled></h-typefield>
+      </titledContainer>
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
-        <titledContainer title="iconRank">
-          <settingLine v-for="setting of typeFieldKeywords.settings" :key="setting.settingName" 
-            :settingName="setting.settingName" 
-            :defaultColor="vm.$store.state.typeField[setting.defaultColor]"
-            :changeMethod="setting.changeMethod" />
-        </titledContainer>
+      <titledContainer title="金额框">
+        <settingLine v-for="setting of typeFieldKeywords.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.typeField[setting.defaultColor]"
+          :changeMethod="setting.changeMethod" />
+      </titledContainer>
     </componentSettings>
   </div>
 </template>

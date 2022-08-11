@@ -3,20 +3,20 @@
     <!-- 预览 -->
 	<componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
     <titledContainer title="颜色属性">
-        <p style="font-size:20px;">
-            UF30中没有对应组件！
-        </p>
-        <previewColorCard v-for="setting of waterMarkKeywords.settings" 
-            :previewColor="vm.$store.state.waterMark[setting.defaultColor]" 
+      <p style="fontSize:20px">
+        UF30中对应组件uFilterTree（？）待引入
+      </p>
+        <previewColorCard v-for="setting of treeKeywords.settings" 
+            :previewColor="vm.$store.state.tree[setting.defaultColor]" 
             :previewTitle="setting.defaultColor" />
     </titledContainer>
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
-        <titledContainer title="水印">
-          <settingLine v-for="setting of waterMarkKeywords.settings" :key="setting.settingName" 
+        <titledContainer title="iconRank">
+          <settingLine v-for="setting of treeKeywords.settings" :key="setting.settingName" 
             :settingName="setting.settingName" 
-            :defaultColor="vm.$store.state.waterMark[setting.defaultColor]"
+            :defaultColor="vm.$store.state.tree[setting.defaultColor]"
             :changeMethod="setting.changeMethod" />
         </titledContainer>
     </componentSettings>
@@ -29,13 +29,13 @@ import componentSettings from '../../components/ComponentSettings.vue'
 import titledContainer from '../../components/TitledContainer.vue'
 import settingLine from '../../components/SettingLine.vue'
 import previewColorCard from '../../components/PreviewColorCard.vue'
-import waterMarkKeywords from '../../keywords/waterMark.js'
+import treeKeywords from '../../keywords/tree.js'
 export default {
   components: { componentPreview, componentSettings, titledContainer, settingLine, previewColorCard },
   data () {
     return {
       vm: this,
-      waterMarkKeywords
+      treeKeywords
     }
   },
 }

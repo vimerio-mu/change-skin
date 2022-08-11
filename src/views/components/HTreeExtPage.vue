@@ -3,6 +3,9 @@
     <!-- 预览 -->
 	<componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
     <titledContainer title="颜色属性">
+        <p style="fontSize:20px">
+          UF30中对应组件待确定
+        </p>
         <previewColorCard v-for="setting of hTreeExtKeywords.settings" :previewColor="vm.$store.state.hTreeExt[setting.defaultColor]" :previewTitle="setting.defaultColor" />
     </titledContainer>
     </componentPreview>

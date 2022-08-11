@@ -3,12 +3,15 @@
     <!-- 预览 -->
 	  <componentPreview :skinName="this.$router.history.current.params.name" style="flex:2;padding:8px">
       <titledContainer title="颜色属性">
+        <p style="fontSize:20px">
+          UF30中对应组件待引入
+        </p>
           <!-- <previewColorCard v-for="setting of switchDescribeKeywords.settings" :previewColor="vm.$store.state.switchDescribe[setting.defaultColor]" :previewTitle="setting.defaultColor" /> -->
       </titledContainer>
     </componentPreview>
     <!-- 修改 -->
     <componentSettings style="flex:1;margin:16px">
-        <titledContainer title="带描述信息的开关">
+        <titledContainer title="带有描述的切换组件">
           <settingLine v-for="setting of switchDescribeKeywords.settings" :key="setting.settingName" :settingName="setting.settingName" :defaultColor="vm.$store.state.switchDescribe[setting.defaultColor]"
             :changeMethod="setting.changeMethod" />
         </titledContainer>

@@ -22,6 +22,8 @@ import HTreeExtPage from '../views/components/HTreeExtPage'
 import WavesPage from '../views/components/WavesPage'
 import WaterMarkPage from '../views/components/WaterMarkPage'
 import TypeFieldPage from '../views/components/TypeFieldPage'
+import TreePage from '../views/components/TreePage'
+import TransferTablePage from '../views/components/TransferTablePage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -58,19 +60,21 @@ const routes = [
         path: 'datepicker',
         component: DatePickerPage,
       },
-      {path: 'switch',component: SwitchPage,},
-      {path: 'uinfoPanel',component: UInfoPanelPage,},
-      {path:'ucharts',component: UChartsPage},
-      { path:'iconrank',component:IconRankPage},
-      { path:'iconhover',component:IconHoverPage},
-      { path:'switchdescribe',component:SwitchDescribePage},
-      { path:'compareicon',component:CompareIconPage},
+      { path:'switch',component: SwitchPage,},
+      { path:'uInfoPanel',component: UInfoPanelPage,},
+      { path:'uCharts',component: UChartsPage},
+      { path:'iconRank',component:IconRankPage},
+      { path:'iconHover',component:IconHoverPage},
+      { path:'switchDescribe',component:SwitchDescribePage},
+      { path:'compareIcon',component:CompareIconPage},
       { path:'simpledict',component:USimpledictPage},
       { path:'communicationNumber',component:UCommunicationNumberPage},
-      { path:'htreeExt',component:HTreeExtPage},
+      { path:'hTreeExt',component:HTreeExtPage},
       { path:'waves',component:WavesPage},
-      { path:'watermark',component:WaterMarkPage},
+      { path:'waterMark',component:WaterMarkPage},
       { path:'typeField',component:TypeFieldPage},
+      { path:'tree',component:TreePage},
+      { path:'transferTable',component:TransferTablePage},
     ],
   },
   {

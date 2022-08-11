@@ -11,7 +11,7 @@ export default {
     computed: {
       styleObject(){
         let color = this.previewColor.toLowerCase()
-        if(color == 'white' || color == '#fff' || color=='#ffffff'){
+        if(color == 'white' || color == '#fff' || color=='#ffffff' || color==undefined || color==null){
           color = 'lightGrey'
         }
         return {

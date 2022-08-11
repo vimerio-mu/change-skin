@@ -33,6 +33,8 @@ import moduleHTreeExt from './modules/hTreeExt'
 import moduleWaves from './modules/waves'
 import moduleWaterMark from './modules/waterMark'
 import moduleTypeField from './modules/typeField'
+import moduleTree from './modules/tree'
+import moduleTransferTable from './modules/transferTable'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -78,6 +80,8 @@ const store = new Vuex.Store({
     waves:moduleWaves,
     waterMark:moduleWaterMark,
     typeField:moduleTypeField,
+    tree:moduleTree,
+    transferTable:moduleTransferTable,
   }
 })
 

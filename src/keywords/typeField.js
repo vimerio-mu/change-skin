@@ -16,7 +16,7 @@ const typeFieldKeywords = {
             changeMethod: "changeTypefieldInputBackgroundColor"
         },
         {
-            settingName: '获得焦点边框',
+            settingName: '聚焦边框',
             defaultColor: "typefieldInputFocusBorderColor",
             changeMethod: "changeTypefieldInputFocusBorderColor"
         },
