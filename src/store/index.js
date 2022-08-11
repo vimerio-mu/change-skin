@@ -37,6 +37,7 @@ import moduleTree from './modules/tree'
 import moduleTransferTable from './modules/transferTable'
 import moduleTransfer from './modules/transfer'
 import moduleTopbar from './modules/topbar'
+import moduleTag from './modules/tag'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -86,6 +87,7 @@ const store = new Vuex.Store({
     transferTable:moduleTransferTable,
     transfer:moduleTransfer,
     topbar:moduleTopbar,
+    tag:moduleTag,
   }
 })
 

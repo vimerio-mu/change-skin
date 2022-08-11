@@ -1,0 +1,30 @@
+const tagKeywords = {
+    settings:[
+        {
+            settingName:'标签文字',
+            defaultColor:'tagColor',
+            changeMethod:'changeTagColor',
+        },
+        {
+            settingName:'标签背景',
+            defaultColor:'tagBackground',
+            changeMethod:'changeTagBackground',
+        },
+        {
+            settingName:'选择标签背景',
+            defaultColor:'selectTagBackground',
+            changeMethod:'changeSelectTagBackground',
+        },
+        {
+            settingName:'dot背景',
+            defaultColor:'tagDotBackground',
+            changeMethod:'changeTagDotBackground',
+        },
+        {
+            settingName:'边框背景',
+            defaultColor:'tagBorderBackground',
+            changeMethod:'changeTagBorderBackground',
+        },
+    ]
+}
+export default tagKeywords
