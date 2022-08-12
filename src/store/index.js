@@ -39,6 +39,7 @@ import moduleTransfer from './modules/transfer'
 import moduleTopbar from './modules/topbar'
 import moduleTag from './modules/tag'
 import moduleTabs from './modules/tabs'
+import moduleTable from './modules/table'
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
@@ -90,6 +91,7 @@ const store = new Vuex.Store({
     topbar:moduleTopbar,
     tag:moduleTag,
     tabs:moduleTabs,
+    table:moduleTable,
   }
 })
 

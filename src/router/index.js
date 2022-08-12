@@ -28,6 +28,7 @@ import TransferPage from '../views/components/TransferPage'
 import TopbarPage from '../views/components/TopbarPage'
 import TagPage from '../views/components/TagPage'
 import TabsPage from '../views/components/TabsPage'
+import TablePage from '../views/components/TablePage'
 import SkinColorPage from '../views/SkinColorPage.vue'
 Vue.use(VueRouter)
 
@@ -83,6 +84,7 @@ const routes = [
       { path:'topbar',component:TopbarPage},
       { path:'tag',component:TagPage},
       { path:'tabs',component:TabsPage},
+      { path:'table',component:TablePage},
     ],
   },
   {
